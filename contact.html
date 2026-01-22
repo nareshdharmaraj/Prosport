@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSport - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-dumbbell"></i> PROSPORT
+                </a>
+                <ul class="nav-links">
+                    <!-- Mobile Menu Header -->
+                    <li class="mobile-nav-header">
+                        <div class="mobile-logo">
+                            <i class="fas fa-dumbbell"></i> PROSPORT
+                        </div>
+                        <button class="mobile-close-btn"><i class="fas fa-times"></i></button>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Home - 1</a></li>
+                            <li><a href="index2.html">Home - 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Dashboard <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="user-dashboard.html">User Dashboard</a></li>
+                            <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="icon-btn rtl-toggle" title="Toggle RTL"><i class="fas fa-globe"></i></button>
+                    <button class="icon-btn theme-toggle" title="Toggle Theme"><i class="far fa-moon"></i></button>
+                    <a href="login.html" class="btn btn-outline"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-width: 1px; border-radius: 8px;">Login</a>
+                    <a href="register.html" class="btn"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-radius: 8px; color: black;">Register</a>
+                    <button class="icon-btn cart-toggle" title="Cart" style="position: relative;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">2</span>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Animated Contact Hero -->
+    <section class="animated-hero-shapes">
+        <div class="kinetic-shape shape-square"></div>
+        <div class="kinetic-shape shape-triangle"></div>
+        <div class="kinetic-shape shape-circle"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 3.5rem;">GET IN TOUCH</h1>
+            <p>We're here to help you crush your goals.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 50px;">Global Reach</h1>
+            <div class="contact-container">
+                <div class="contact-info" data-animate>
+                    <div style="margin-bottom: 40px;">
+                        <h2 style="margin-bottom: 20px; color: var(--primary-color);">Headquarters</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.6;">
+                            <i class="fas fa-map-marker-alt"
+                                style="margin-right: 15px; width: 20px; text-align: center;"></i>
+                            123 Fitness Blvd, Suite 100<br>
+                            <span style="padding-left: 40px;">Muscle City, SP 90210</span>
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px;">
+                            <i class="fas fa-phone" style="margin-right: 15px; width: 20px; text-align: center;"></i> +1
+                            (555) 123-4567
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px;">
+                            <i class="fas fa-envelope" style="margin-right: 15px; width: 20px; text-align: center;"></i>
+                            support@prosport.com
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 40px;">
+                        <h3 style="margin-bottom: 20px;">Regional Offices</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="background: var(--bg-secondary); padding: 15px; border-radius: 8px;">
+                                <h4>New York</h4>
+                                <p style="font-size: 0.9rem; opacity: 0.8;">5th Avenue, NY</p>
+                            </div>
+                            <div style="background: var(--bg-secondary); padding: 15px; border-radius: 8px;">
+                                <h4>London</h4>
+                                <p style="font-size: 0.9rem; opacity: 0.8;">Oxford Street, UK</p>
+                            </div>
+                            <div style="background: var(--bg-secondary); padding: 15px; border-radius: 8px;">
+                                <h4>Tokyo</h4>
+                                <p style="font-size: 0.9rem; opacity: 0.8;">Shibuya, Japan</p>
+                            </div>
+                            <div style="background: var(--bg-secondary); padding: 15px; border-radius: 8px;">
+                                <h4>Berlin</h4>
+                                <p style="font-size: 0.9rem; opacity: 0.8;">Mitte, Germany</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" data-animate>
+                    <h2 style="margin-bottom: 30px;">Send Message</h2>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <select
+                        style="width: 100%; padding: 15px; margin-bottom: 20px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px;">
+                        <option>General Inquiry</option>
+                        <option>Support</option>
+                        <option>Sales</option>
+                        <option>Partnership</option>
+                    </select>
+                    <textarea rows="6" placeholder="Message" required></textarea>
+                    <button class="btn" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Store Locations -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 40px;">Visit Our Flagships</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="position: relative; height: 300px; border-radius: 15px; overflow: hidden;">
+                    <img src="Assets/gym-bg1.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(to top, black, transparent);">
+                        <h3 style="color: white; margin-bottom: 5px;">Los Angeles</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Hollywood Blvd</p>
+                    </div>
+                </div>
+                <div style="position: relative; height: 300px; border-radius: 15px; overflow: hidden;">
+                    <img src="Assets/gym-bg3.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(to top, black, transparent);">
+                        <h3 style="color: white; margin-bottom: 5px;">New York</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">SoHo District</p>
+                    </div>
+                </div>
+                <div style="position: relative; height: 300px; border-radius: 15px; overflow: hidden;">
+                    <img src="Assets/gym-bg.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(to top, black, transparent);">
+                        <h3 style="color: white; margin-bottom: 5px;">London</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Shoreditch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Interactive Map Section -->
+    <div id="contact-map" style="width: 100%; height: 500px; z-index: 1; position: relative;"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Leaflet Map
+            // Coordinates for Los Angeles (matching one of the flagship stores)
+            var map = L.map('contact-map', {
+                center: [34.0522, -118.2437],
+                zoom: 13,
+                scrollWheelZoom: false // Disable scroll zoom for better page scrolling experience
+            });
+
+            // Add OpenStreetMap Tile Layer (Free, No API Key required)
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            // Custom Icon for Sportive Look
+            var gymIcon = L.divIcon({
+                className: 'custom-div-icon',
+                html: "<div style='background-color: #D4F000; width: 30px; height: 30px; border-radius: 50%; border: 3px solid black; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 10px #D4F000;'><i class='fas fa-dumbbell' style='color: black; font-size: 14px;'></i></div>",
+                iconSize: [30, 30],
+                iconAnchor: [15, 15]
+            });
+
+            // Add Markers
+            var locations = [
+                { lat: 34.0522, lng: -118.2437, title: "ProSport HQ - Los Angeles" },
+                { lat: 34.0622, lng: -118.2537, title: "ProSport Warehouse" }
+            ];
+
+            locations.forEach(function (loc) {
+                L.marker([loc.lat, loc.lng], { icon: gymIcon }).addTo(map)
+                    .bindPopup("<b>" + loc.title + "</b><br>123 Fitness Blvd.")
+                    .openPopup();
+            });
+        });
+    </script>
+
+    <!-- Shipping FAQ (New Content) -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center" style="margin-bottom: 40px;">Shipping & Orders</h2>
+            <div class="grid-cols-2">
+                <div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Where is my order?</h3>
+                    <p style="opacity: 0.7; font-size: 0.9rem;">You can track your order status in real-time by logging
+                        into your account dashboard.</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Do you ship internationally?</h3>
+                    <p style="opacity: 0.7; font-size: 0.9rem;">Yes, we ship to over 150 countries via DHL Express and
+                        FedEx International.</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Can I change my address?</h3>
+                    <p style="opacity: 0.7; font-size: 0.9rem;">Address changes are allowed within 12 hours of placing
+                        the order. Contact support immediately.</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">What if it arrives damaged?</h3>
+                    <p style="opacity: 0.7; font-size: 0.9rem;">We offer a 100% replacement guarantee for any items
+                        damaged during transit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Center & Socials -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px;">
+                <div>
+                    <h2 style="margin-bottom: 30px;">Help Center</h2>
+                    <div class="help-accordion">
+                        <!-- Item 1: Track Order -->
+                        <div class="help-item">
+                            <div class="help-header">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <i class="fas fa-chevron-right help-arrow"></i>
+                                    <span>Track Order</span>
+                                </div>
+                                <i class="fas fa-box-open" style="color: var(--primary-color);"></i>
+                            </div>
+                            <div class="help-content">
+                                <p style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8;">Enter your order ID to
+                                    see real-time status updates.</p>
+                                <div style="display: flex; gap: 10px;">
+                                    <input type="text" placeholder="Order ID (e.g. #1234)"
+                                        style="flex: 1; padding: 10px; border-radius: 5px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color);">
+                                    <button class="btn" style="padding: 10px 20px; font-size: 0.8rem;">Track</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2: Returns -->
+                        <div class="help-item">
+                            <div class="help-header">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <i class="fas fa-chevron-right help-arrow"></i>
+                                    <span>Returns & Exchanges</span>
+                                </div>
+                                <i class="fas fa-undo" style="color: var(--primary-color);"></i>
+                            </div>
+                            <div class="help-content">
+                                <p style="font-size: 0.9rem; margin-bottom: 10px; opacity: 0.8;">We offer a 30-day
+                                    return policy for all unused items.</p>
+                                <ul style="font-size: 0.85rem; opacity: 0.7; margin-bottom: 15px; padding-left: 20px;">
+                                    <li>Original packaging required</li>
+                                    <li>Proof of purchase needed</li>
+                                    <li>Free return shipping for members</li>
+                                </ul>
+                                <a href="#"
+                                    style="color: var(--primary-color); font-weight: bold; font-size: 0.9rem;">Start a
+                                    Return &rarr;</a>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: Warranty -->
+                        <div class="help-item">
+                            <div class="help-header">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <i class="fas fa-chevron-right help-arrow"></i>
+                                    <span>Warranty Claims</span>
+                                </div>
+                                <i class="fas fa-shield-alt" style="color: var(--primary-color);"></i>
+                            </div>
+                            <div class="help-content">
+                                <p style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8;">Register your product
+                                    or file a claim for manufacturing defects.</p>
+                                <div style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+                                    <a href="#" class="btn btn-outline"
+                                        style="width: 100%; justify-content: center; font-size: 0.75rem; padding: 10px 5px; white-space: nowrap;">Register
+                                        Product</a>
+                                    <a href="#" class="btn"
+                                        style="width: 100%; justify-content: center; font-size: 0.75rem; padding: 10px 5px; white-space: nowrap;">File
+                                        Claim</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 style="margin-bottom: 30px;">Connect With Us</h2>
+                    <p style="margin-bottom: 20px;">Follow our journey on social media for daily workout tips and gear
+                        drops.</p>
+                    <div style="display: flex; gap: 20px;">
+                        <a href="#"
+                            style="width: 50px; height: 50px; background: #3b5998; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            style="width: 50px; height: 50px; background: #1da1f2; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            style="width: 50px; height: 50px; background: #e1306c; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            style="width: 50px; height: 50px; background: #ff0000; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section" style="background: linear-gradient(135deg, #111 0%, #222 100%); color: white;">
+        <div class="container text-center">
+            <h2 style="margin-bottom: 20px;">Join The Inner Circle</h2>
+            <p style="margin-bottom: 40px; opacity: 0.7;">Get 10% off your first order and exclusive access to new
+                product launches.</p>
+            <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
+                <input type="email" placeholder="Enter your email"
+                    style="border-radius: 50px; border: none; padding-left: 25px;">
+                <button class="btn" style="border-radius: 50px; padding: 0 40px;">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-elaborate">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col" data-animate="fade-up">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; text-decoration: none;">
+                        <i class="fas fa-dumbbell" style="color: var(--primary-color);"></i> PROSPORT
+                    </a>
+                    <p style="color: #999; line-height: 1.8; margin-bottom: 25px;">
+                        The world's premier destination for high-performance athletic equipment. We empower athletes to
+                        surpass their limits through innovation and superior design.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.1s;">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="shop.html">Men's Equipment</a></li>
+                        <li><a href="shop.html">Women's Gear</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.2s;">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Order Status</a></li>
+                        <li><a href="contact.html">Shipping & Returns</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.3s;">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div
+                        style="margin-top: 25px; display: flex; align-items: center; gap: 10px; color: #777; font-size: 0.8rem;">
+                        <i class="fas fa-lock"></i> Secure 256-bit SSL encryption.
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 ProSport Inc. All rights reserved.</div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart (2)</h3>
+            <button class="icon-btn close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="Assets/hex_dumbbell.jpg" alt="Product">
+                <div>
+                    <h4>Hex Dumbbells</h4>
+                    <p>$49.99 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="cart-item">
+                <img src="Assets/water_bottle.jpg" alt="Product">
+                <div>
+                    <h4>Elite Bottle</h4>
+                    <p>$25.00 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="flex-between" style="margin-bottom: 20px; font-weight: bold;">
+                <span>Total</span>
+                <span class="cart-total">$74.99</span>
+            </div>
+            <a href="#" class="btn" style="width: 100%; text-align: center;">Checkout</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

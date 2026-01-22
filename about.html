@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSport - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-dumbbell"></i> PROSPORT
+                </a>
+                <ul class="nav-links">
+                    <!-- Mobile Menu Header -->
+                    <li class="mobile-nav-header">
+                        <div class="mobile-logo">
+                            <i class="fas fa-dumbbell"></i> PROSPORT
+                        </div>
+                        <button class="mobile-close-btn"><i class="fas fa-times"></i></button>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Home - 1</a></li>
+                            <li><a href="index2.html">Home - 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Dashboard <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="user-dashboard.html">User Dashboard</a></li>
+                            <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="icon-btn rtl-toggle" title="Toggle RTL"><i class="fas fa-globe"></i></button>
+                    <button class="icon-btn theme-toggle" title="Toggle Theme"><i class="far fa-moon"></i></button>
+                    <a href="login.html" class="btn btn-outline"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-width: 1px; border-radius: 8px;">Login</a>
+                    <a href="register.html" class="btn"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-radius: 8px; color: black;">Register</a>
+                    <button class="icon-btn cart-toggle" title="Cart" style="position: relative;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">2</span>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <!-- Animated About Hero -->
+    <section class="animated-hero-glow">
+        <div class="glow-circle glow-circle-1"></div>
+        <div class="glow-circle glow-circle-2"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 3.5rem;">OUR LEGACY</h1>
+            <p>Building the future of fitness since 2010.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="section">
+        <div class="container">
+            <div class="about-grid" data-animate>
+                <div>
+                    <img src="Assets/about.jpg" alt="About Us" class="about-img">
+                </div>
+                <div>
+                    <h2 style="color: var(--primary-color);">Dedication to Excellence</h2>
+                    <p style="margin: 20px 0; line-height: 1.8; font-size: 1.1rem;">Founded in a small garage by two
+                        Olympic hopefuls, ProSport started with a simple mission: to provide professional-grade sports
+                        equipment to everyone. We believe that access to quality gear is the first step towards
+                        achieving athletic greatness.</p>
+                    <p style="margin-bottom: 20px; line-height: 1.8;">Our team consists of former athletes, coaches, and
+                        sports engineers who meticulously design and select every product in our catalog to ensure it
+                        meets international competition standards.</p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
+                        <div>
+                            <h3 style="font-size: 2.5rem; color: var(--primary-color);">15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 2.5rem; color: var(--primary-color);">50k+</h3>
+                            <p>Happy Athletes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline (New Content) -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Journey</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item left" data-animate>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2010</div>
+                        <h3 class="timeline-title">The Beginning</h3>
+                        <p class="timeline-text">ProSport opens its first store in Los Angeles offering basic
+                            weightlifting gear.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-animate>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2015</div>
+                        <h3 class="timeline-title">Going Digital</h3>
+                        <p class="timeline-text">Launch of our e-commerce platform shipping to 50 states.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left" data-animate>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020</div>
+                        <h3 class="timeline-title">Global Expansion</h3>
+                        <p class="timeline-text">Partnerships with European distributors and launch of the Smart-Connect
+                            line.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-animate>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2026</div>
+                        <h3 class="timeline-title">The Future</h3>
+                        <p class="timeline-text">Introducing AI-driven workout plans and the Titan series equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet The Team</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" style="text-align: center; padding: 40px; border: none; box-shadow: none;"
+                    data-animate>
+                    <div
+                        style="width: 180px; height: 180px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden; border: 4px solid var(--bg-secondary);">
+                        <img src="Assets/team1.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4>Alex Strong</h4>
+                    <p style="color: var(--primary-color); font-weight: bold;">CEO & Founder</p>
+                    <div style="margin-top: 15px; opacity: 0.6;">
+                        <i class="fab fa-linkedin"></i> <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="product-card" style="text-align: center; padding: 40px; border: none; box-shadow: none;"
+                    data-animate>
+                    <div
+                        style="width: 180px; height: 180px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden; border: 4px solid var(--bg-secondary);">
+                        <img src="Assets/team2.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4>Sarah Fast</h4>
+                    <p style="color: var(--primary-color); font-weight: bold;">Head of Design</p>
+                    <div style="margin-top: 15px; opacity: 0.6;">
+                        <i class="fab fa-linkedin"></i> <i class="fab fa-dribbble"></i>
+                    </div>
+                </div>
+                <div class="product-card" style="text-align: center; padding: 40px; border: none; box-shadow: none;"
+                    data-animate>
+                    <div
+                        style="width: 180px; height: 180px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden; border: 4px solid var(--bg-secondary);">
+                        <img src="Assets/team3.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4>Mike Power</h4>
+                    <p style="color: var(--primary-color); font-weight: bold;">Product Manager</p>
+                    <div style="margin-top: 15px; opacity: 0.6;">
+                        <i class="fab fa-linkedin"></i> <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 50px;">Our Core Values</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="info-card">
+                    <i class="fas fa-medal"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Excellence First</h3>
+                    <p style="opacity: 0.8;">We never compromise on quality. Every stitch, weld, and bolt is inspected
+                        tailored for champions.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-users"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Community Driven</h3>
+                    <p style="opacity: 0.8;">We pledge 1% of all revenue to support local youth spots programs in
+                        underfunded districts.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-lightbulb"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Constant Innovation</h3>
+                    <p style="opacity: 0.8;">We invest heavily in R&D. If it doesn't make you faster or stronger, we
+                        don't build it.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-leaf"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Sustainable Future</h3>
+                    <p style="opacity: 0.8;">Our commitment to the planet is as strong as our commitment to the athlete.
+                        100% Carbon Neutral by 2030.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-handshake"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Integrity</h3>
+                    <p style="opacity: 0.8;">Transparent pricing, honest marketing, and a lifetime warranty on
+                        everything we sell.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-heart"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Passion</h3>
+                    <p style="opacity: 0.8;">We are athletes serving athletes. We wake up every day excited to improve
+                        the game.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-mountain"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Resilience</h3>
+                    <p style="opacity: 0.8;">We celebrate the comeback. We build gear for the long run, supporting you
+                        through every challenge.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-universal-access"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Accessibility</h3>
+                    <p style="opacity: 0.8;">Fitness has no boundaries. We design equipment that is accessible and
+                        adaptable for all ability levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners (New Content) -->
+    <section class="section"
+        style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container text-center">
+            <h4 style="margin-bottom: 40px; color: var(--text-muted); letter-spacing: 2px;">TRUSTED BY ELITE
+                ORGANIZATIONS</h4>
+            <div
+                style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; opacity: 0.5; filter: grayscale(100%);">
+                <i class="fas fa-running" style="font-size: 3rem;"></i>
+                <i class="fas fa-basketball-ball" style="font-size: 3rem;"></i>
+                <i class="fas fa-football-ball" style="font-size: 3rem;"></i>
+                <i class="fas fa-swimmer" style="font-size: 3rem;"></i>
+                <i class="fas fa-volleyball-ball" style="font-size: 3rem;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach & Stats Dashboard (Simulated) -->
+    <section class="section" style="background: #111; color: white;">
+        <div class="container">
+            <div class="flex-between" style="margin-bottom: 40px; flex-wrap: wrap;">
+                <div>
+                    <h2 style="margin-bottom: 10px;">Global Operations Monitor</h2>
+                    <p style="opacity: 0.6;">Real-time shipment and facility tracking.</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <span
+                        style="width: 10px; height: 10px; background: #00ff00; border-radius: 50%; display: inline-block;"></span>
+                    <span style="font-family: monospace; color: #00ff00;">SYSTEM ONLINE</span>
+                </div>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; font-family: monospace;">
+                <!-- Stat 1 -->
+                <div
+                    style="background: #222; padding: 20px; border-radius: 10px; border-left: 3px solid var(--primary-color);">
+                    <div style="font-size: 0.8rem; opacity: 0.6; margin-bottom: 5px;">ACTIVE SHIPMENTS</div>
+                    <div style="font-size: 2rem; font-weight: bold;">14,203</div>
+                    <div style="font-size: 0.8rem; color: #00ff00;">+12% This Week</div>
+                </div>
+                <!-- Stat 2 -->
+                <div
+                    style="background: #222; padding: 20px; border-radius: 10px; border-left: 3px solid var(--primary-color);">
+                    <div style="font-size: 0.8rem; opacity: 0.6; margin-bottom: 5px;">DISTRIBUTION CENTERS</div>
+                    <div style="font-size: 2rem; font-weight: bold;">24</div>
+                    <div style="font-size: 0.8rem; color: #aaa;">Across 12 Countries</div>
+                </div>
+                <!-- Stat 3 -->
+                <div
+                    style="background: #222; padding: 20px; border-radius: 10px; border-left: 3px solid var(--primary-color);">
+                    <div style="font-size: 0.8rem; opacity: 0.6; margin-bottom: 5px;">SUPPORT TICKETS</div>
+                    <div style="font-size: 2rem; font-weight: bold;">0</div>
+                    <div style="font-size: 0.8rem; color: #00ff00;">All Resolved</div>
+                </div>
+                <!-- Stat 4 -->
+                <div
+                    style="background: #222; padding: 20px; border-radius: 10px; border-left: 3px solid var(--primary-color);">
+                    <div style="font-size: 0.8rem; opacity: 0.6; margin-bottom: 5px;">AVG DELIVERY TIME</div>
+                    <div style="font-size: 2rem; font-weight: bold;">32h</div>
+                    <div style="font-size: 0.8rem; color: #00ff00;">-4h improvement</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; border-top: 1px solid #333; padding-top: 30px;">
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center; opacity: 0.5;">
+                    <i class="fas fa-plane" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                    <i class="fas fa-ship" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                    <i class="fas fa-truck" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                    <i class="fas fa-warehouse" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                    <i class="fas fa-globe-americas" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 style="margin-bottom: 50px;">Awards & Recognition</h2>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; align-items: center;">
+                <div
+                    style="opacity: 0.6; font-size: 1.5rem; font-weight: bold; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <i class="fas fa-trophy" style="font-size: 3rem; color: gold;"></i>
+                    Best Design 2024
+                </div>
+                <div
+                    style="opacity: 0.6; font-size: 1.5rem; font-weight: bold; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <i class="fas fa-award" style="font-size: 3rem; color: silver;"></i>
+                    Eco-Innovation
+                </div>
+                <div
+                    style="opacity: 0.6; font-size: 1.5rem; font-weight: bold; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <i class="fas fa-star" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    Customers' Choice
+                </div>
+                <div
+                    style="opacity: 0.6; font-size: 1.5rem; font-weight: bold; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <i class="fas fa-check-circle" style="font-size: 3rem; color: #4CAF50;"></i>
+                    Safety Certified
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Sustainability Impact -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                <div style="order: 2;">
+                    <img src="Assets/gym-bg3.jpg" style="width: 100%; border-radius: 20px;">
+                </div>
+                <div style="order: 1;">
+                    <h2 style="margin-bottom: 20px;">Built for the Planet</h2>
+                    <p style="margin-bottom: 20px; line-height: 1.8;">We believe that a healthy body requires a healthy
+                        planet. That's why we've committed to becoming carbon neutral by 2030.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                                style="color: green; margin-right: 10px;"></i> 100% Recycled Steel utilization</li>
+                        <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                                style="color: green; margin-right: 10px;"></i> Plastic-free packaging</li>
+                        <li style="margin-bottom: 15px;"><i class="fas fa-check-circle"
+                                style="color: green; margin-right: 10px;"></i> Solar-powered manufacturing facilities
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" style="margin-top: 20px;">Read Sustainability Report</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers / Join Us -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container text-center">
+            <h2 style="margin-bottom: 20px;">Join The Team</h2>
+            <p style="margin-bottom: 50px; max-width: 600px; margin-left: auto; margin-right: auto;">We're always
+                looking for passionate individuals to help us build the future of fitness.</p>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left;">
+                <div
+                    style="background: var(--card-bg); padding: 30px; border-radius: 10px; border-left: 4px solid var(--primary-color);">
+                    <h3>Product Designer</h3>
+                    <p style="opacity: 0.7; margin-bottom: 15px;">Los Angeles, CA (Hybrid)</p>
+                    <p>Lead the design of our next-generation strength equipment.</p>
+                    <a href="#"
+                        style="color: var(--primary-color); font-weight: bold; margin-top: 10px; display: inline-block;">Apply
+                        Now &rarr;</a>
+                </div>
+                <div
+                    style="background: var(--card-bg); padding: 30px; border-radius: 10px; border-left: 4px solid var(--primary-color);">
+                    <h3>Supply Chain Manager</h3>
+                    <p style="opacity: 0.7; margin-bottom: 15px;">Austin, TX (Remote)</p>
+                    <p>Optimize our global logistics and reduce delivery times.</p>
+                    <a href="#"
+                        style="color: var(--primary-color); font-weight: bold; margin-top: 10px; display: inline-block;">Apply
+                        Now &rarr;</a>
+                </div>
+                <div
+                    style="background: var(--card-bg); padding: 30px; border-radius: 10px; border-left: 4px solid var(--primary-color);">
+                    <h3>Customer Success Lead</h3>
+                    <p style="opacity: 0.7; margin-bottom: 15px;">New York, NY (On-site)</p>
+                    <p>Ensure every athlete gets the support they need.</p>
+                    <a href="#"
+                        style="color: var(--primary-color); font-weight: bold; margin-top: 10px; display: inline-block;">Apply
+                        Now &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press / As Seen In -->
+    <section class="section">
+        <div class="container text-center">
+            <h4 style="margin-bottom: 40px; color: var(--text-muted); letter-spacing: 2px;">AS SEEN IN</h4>
+            <div
+                style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; align-items: center; opacity: 0.6;">
+                <h3 style="margin: 0;">MEN'S HEALTH</h3>
+                <h3 style="margin: 0;">WIRED</h3>
+                <h3 style="margin: 0;">GQ</h3>
+                <h3 style="margin: 0;">FORBES</h3>
+                <h3 style="margin: 0;">ESPN</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-elaborate">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col" data-animate="fade-up">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; text-decoration: none;">
+                        <i class="fas fa-dumbbell" style="color: var(--primary-color);"></i> PROSPORT
+                    </a>
+                    <p style="color: #999; line-height: 1.8; margin-bottom: 25px;">
+                        The world's premier destination for high-performance athletic equipment. We empower athletes to
+                        surpass their limits through innovation and superior design.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.1s;">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="shop.html">Men's Equipment</a></li>
+                        <li><a href="shop.html">Women's Gear</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.2s;">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Order Status</a></li>
+                        <li><a href="contact.html">Shipping & Returns</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.3s;">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div
+                        style="margin-top: 25px; display: flex; align-items: center; gap: 10px; color: #777; font-size: 0.8rem;">
+                        <i class="fas fa-lock"></i> Secure 256-bit SSL encryption.
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 ProSport Inc. All rights reserved.</div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart (2)</h3>
+            <button class="icon-btn close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="Assets/hex_dumbbell.jpg" alt="Product">
+                <div>
+                    <h4>Hex Dumbbells</h4>
+                    <p>$49.99 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="cart-item">
+                <img src="Assets/water_bottle.jpg" alt="Product">
+                <div>
+                    <h4>Elite Bottle</h4>
+                    <p>$25.00 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="flex-between" style="margin-bottom: 20px; font-weight: bold;">
+                <span>Total</span>
+                <span class="cart-total">$74.99</span>
+            </div>
+            <a href="#" class="btn" style="width: 100%; text-align: center;">Checkout</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

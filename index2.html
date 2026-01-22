@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> <!-- Default LTR -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSport - Premium Equipment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons (Allowed per context, no other ext dependencies) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="theme-modern">
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-dumbbell"></i> PROSPORT
+                </a>
+                <ul class="nav-links">
+                    <!-- Mobile Menu Header -->
+                    <li class="mobile-nav-header">
+                        <div class="mobile-logo">
+                            <i class="fas fa-dumbbell"></i> PROSPORT
+                        </div>
+                        <button class="mobile-close-btn"><i class="fas fa-times"></i></button>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Home - 1</a></li>
+                            <li><a href="index2.html">Home - 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Dashboard <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="user-dashboard.html">User Dashboard</a></li>
+                            <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="icon-btn rtl-toggle" title="Toggle RTL"><i class="fas fa-globe"></i></button>
+                    <button class="icon-btn theme-toggle" title="Toggle Theme"><i class="far fa-moon"></i></button>
+                    <a href="login.html" class="btn btn-outline"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-width: 1px; border-radius: 8px;">Login</a>
+                    <a href="register.html" class="btn"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-radius: 8px; color: black;">Register</a>
+                    <button class="icon-btn cart-toggle" title="Cart" style="position: relative;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">2</span>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- NEW HERO SECTION -->
+    <section class="hero-modern">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-fade-up">Train Harder. <br> <span class="gradient-text">Play Better.</span></h1>
+                <h3 class="animate-fade-up delay-1"
+                    style="color: rgba(255,255,255,0.8); margin-block: 20px; font-weight: 400;">Premium sports equipment
+                    for every champion.</h3>
+                <p class="animate-fade-up delay-2"
+                    style="max-width: 600px; margin-inline: auto; color: rgba(255,255,255,0.6); margin-bottom: 40px;">
+                    Experience professional-grade engineering designed to elevate your performance. From the gym to the
+                    field, we have you covered.
+                </p>
+                <div class="animate-fade-up delay-3">
+                    <a href="products.html" class="btn" style="font-size: 1.1rem; padding: 15px 40px;">
+                        Explore Equipment <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Horizontal Scroll Cards -->
+            <div class="cards-scroll-container animate-fade-up delay-3">
+                <div class="scroll-card">
+                    <img src="Assets/p1.jpg" alt="Gym Training">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Gym Training</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Strength & Conditioning</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/cat2.jpg" alt="Running">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Running</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Endurance & Speed</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/cat3.jpg" alt="Team Sports">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Team Sports</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Football & Cricket</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/p4.jpg" alt="Yoga">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Yoga</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Flexibility & Flow</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/gloves.jpg" alt="Gear">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Tech Gear</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Smart Wearables</p>
+                    </div>
+                </div>
+                <!-- New Added Cards for Extended Scroll -->
+                <div class="scroll-card">
+                    <img src="Assets/kettlebell.jpg" alt="Crossfit">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Crossfit</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">High Intensity</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/hero1.jpg" alt="Powerlifting">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Powerlifting</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Maximum Strength</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/hero2.jpg" alt="Calisthenics">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Calisthenics</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Bodyweight Mastery</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/cat1.jpg" alt="Boxing">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Boxing</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Combat Sports</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/gym-bg.jpg" alt="Cycling">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Cycling</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Indoor & Outdoor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Trending Gear -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 20px;">Trending Gear</h2>
+            <div class="cards-scroll-container animate-fade-up">
+                <div class="scroll-card">
+                    <img src="Assets/hex_dumbbell.jpg" alt="Dumbbells">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Hex Dumbbells</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Best Seller</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/treadmill.jpg" alt="Treadmill">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Pro Treadmill</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">New Arrival</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/water_bottle.jpg" alt="Bottle">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Elite Bottle</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Accessories</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/yoga_mat.jpg" alt="Yoga Mat">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Yoga Mat Plus</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Eco-Friendly</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/cat1.jpg" alt="Kettlebell">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Iron Kettlebell</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Heavy Duty</p>
+                    </div>
+                </div>
+                <div class="scroll-card">
+                    <img src="Assets/cat2.jpg" alt="Shoes">
+                    <div class="card-overlay">
+                        <h3 style="color: white; margin-bottom: 5px;">Speed Runners</h3>
+                        <p style="color: #ccc; font-size: 0.9rem;">Footwear</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections (Preserved but styled with new CSS) -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 50px;">Why Choose ProSport?</h2>
+
+            <div class="pro-grid-3">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Durability Guaranteed</h3>
+                    <p style="color: var(--text-muted);">Built with carbon-fiber composites and military-grade materials
+                        to withstand the toughest workouts.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast feature-icon"></i>
+                    <h3>Global Fast Shipping</h3>
+                    <p style="color: var(--text-muted);">We ship to 150+ countries with express options ensuring you get
+                        your gear before game day.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo feature-icon"></i>
+                    <h3>30-Day Returns</h3>
+                    <p style="color: var(--text-muted);">Not satisfied? Return it within 30 days for a full refund. No
+                        questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Athletes -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 50px;">Pro Team Athletes</h2>
+            <div class="cards-scroll-container">
+                <div class="scroll-card" style="flex: 0 0 300px; height: 350px;">
+                    <img src="Assets/team1.jpg" alt="Athlete">
+                    <div class="card-overlay">
+                        <h3 style="color: white">Alex "The Titan"</h3>
+                        <p style="color: #ccc">Powerlifting Champion</p>
+                    </div>
+                </div>
+                <div class="scroll-card" style="flex: 0 0 300px; height: 350px;">
+                    <img src="Assets/team2.jpg" alt="Athlete">
+                    <div class="card-overlay">
+                        <h3 style="color: white">Sarah Sprint</h3>
+                        <p style="color: #ccc">Track & Field Gold</p>
+                    </div>
+                </div>
+                <div class="scroll-card" style="flex: 0 0 300px; height: 350px;">
+                    <img src="Assets/team3.jpg" alt="Athlete">
+                    <div class="card-overlay">
+                        <h3 style="color: white">Mike Iron</h3>
+                        <p style="color: #ccc">Bodybuilding Pro</p>
+                    </div>
+                </div>
+                <div class="scroll-card" style="flex: 0 0 300px; height: 350px;">
+                    <img src="Assets/p4.jpg" alt="Athlete">
+                    <div class="card-overlay">
+                        <h3 style="color: white">Elena Flow</h3>
+                        <p style="color: #ccc">Yoga Master</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="flex-between" style="margin-bottom: 40px;">
+                <h2>Latest Performance Log</h2>
+                <a href="#" class="btn btn-outline">Read All</a>
+            </div>
+
+            <div class="pro-grid-4">
+                <div class="log-card">
+                    <div class="log-img">
+                        <img src="Assets/hero1.jpg">
+                    </div>
+                    <div class="log-content">
+                        <div class="log-category">TRAINING TIPS</div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 10px;">5 Mistakes Killing Your Gains</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0;">Stop doing these common errors to
+                            maximize hypertrophy.</p>
+                    </div>
+                </div>
+
+                <div class="log-card">
+                    <div class="log-img">
+                        <img src="Assets/hero2.jpg">
+                    </div>
+                    <div class="log-content">
+                        <div class="log-category">NUTRITION</div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 10px;">The Pre-Workout Meal</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0;">Fuel your body right with this
+                            science-backed macro split.</p>
+                    </div>
+                </div>
+
+                <div class="log-card">
+                    <div class="log-img">
+                        <img src="Assets/sprint_spikes.jpg">
+                    </div>
+                    <div class="log-content">
+                        <div class="log-category">GEAR TECH</div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Smart Shoes: A Gimmick?</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0;">We tested the top 3 smart running
+                            shoes. Here is the verdict.</p>
+                    </div>
+                </div>
+
+                <div class="log-card">
+                    <div class="log-img">
+                        <img src="Assets/img_sleep_recovery_1768241939613.png">
+                    </div>
+                    <div class="log-content">
+                        <div class="log-category">RECOVERY</div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Sleep vs. Stretching</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0;">Which one is actually more
+                            important for recovery?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 style="margin-bottom: 50px;">The ProSport Methodology</h2>
+            <div class="pro-grid-4">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Analyze</h3>
+                    <p style="color: var(--text-muted);">We study your biomechanics to find the perfect gear match.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Optimize</h3>
+                    <p style="color: var(--text-muted);">Custom adjustments to enhance your natural strengths.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Execute</h3>
+                    <p style="color: var(--text-muted);">Put the plan into action with high-performance equipment.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Recover</h3>
+                    <p style="color: var(--text-muted);">Advanced tools to get you back in the game faster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Grid -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 style="margin-bottom: 40px;">Upcoming Events 2026</h2>
+            <div class="pro-grid-2">
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">15</div>
+                        <div class="event-month">MAR</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 5px;">National Powerlifting Meet</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">Los Angeles
+                            Convention Center</p>
+                        <a href="#"
+                            style="color: var(--primary-text-visible); font-weight: bold; font-size: 0.8rem;">REGISTER
+                            &rarr;</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">02</div>
+                        <div class="event-month">APR</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 5px;">City Marathon Series</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">Start Line:
+                            Downtown Park</p>
+                        <a href="#"
+                            style="color: var(--primary-text-visible); font-weight: bold; font-size: 0.8rem;">REGISTER
+                            &rarr;</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">20</div>
+                        <div class="event-month">MAY</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Crossfit Regional Games</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">Santa Monica Beach
+                        </p>
+                        <a href="#"
+                            style="color: var(--primary-text-visible); font-weight: bold; font-size: 0.8rem;">REGISTER
+                            &rarr;</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">10</div>
+                        <div class="event-month">JUN</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Yoga Retreat Weekend</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">Big Sur, CA</p>
+                        <a href="#"
+                            style="color: var(--primary-text-visible); font-weight: bold; font-size: 0.8rem;">REGISTER
+                            &rarr;</a>
+                    </div>
+                </div>
+                <!-- Added to fill empty space -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">22</div>
+                        <div class="event-month">JUL</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Summer Shed Challenge</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">Miami Beach</p>
+                        <a href="#"
+                            style="color: var(--primary-text-visible); font-weight: bold; font-size: 0.8rem;">REGISTER
+                            &rarr;</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">05</div>
+                        <div class="event-month">AUG</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Iron Man Tri-Series</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">Boulder, CO</p>
+                        <a href="#"
+                            style="color: var(--primary-text-visible); font-weight: bold; font-size: 0.8rem;">REGISTER
+                            &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cinematic Video Section -->
+    <section class="section" style="padding: 0; background: black;">
+        <div style="position: relative; height: 600px; overflow: hidden;">
+            <img src="Assets/gym-bg2.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+            <div
+                style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: white; padding: 20px;">
+                <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 30px; cursor: pointer; transition: 0.3s;"
+                    onmouseover="this.style.background='var(--primary-color)'; this.style.borderColor='var(--primary-color)'"
+                    onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='white'">
+                    <i class="fas fa-play" style="font-size: 1.5rem; margin-left: 5px;"></i>
+                </div>
+                <h2
+                    style="font-size: clamp(2.5rem, 8vw, 5rem); text-transform: uppercase; letter-spacing: clamp(2px, 1vw, 5px); margin-bottom: 20px; word-break: break-word;">
+                    Relentless</h2>
+                <p style="font-size: clamp(1rem, 2vw, 1.2rem); max-width: 600px; margin: 0 auto;">"Success isn't owned.
+                    It's leased. And
+                    rent is due every day."</p>
+                <p style="opacity: 0.7; margin-top: 10px;">- J.J. Watt</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Ecosystem (App Integration) -->
+    <!-- Digital Ecosystem Highlight -->
+    <section class="app-section-wrapper">
+        <div class="container">
+            <div class="app-tech-card">
+                <div class="flex-between" style="flex-wrap: wrap; gap: 50px;">
+                    <div style="flex: 1; min-width: 300px;" class="app-content">
+                        <div class="app-badge">SMART INTEGRATION</div>
+                        <h2>Connect to the <br> ProSport Cloud</h2>
+                        <p>
+                            Your gear shouldn't just sit there. Our enabled devices sync instantly with the ProSport App
+                            to
+                            track velocity, power output, and recovery metrics in real-time.
+                        </p>
+                        <ul class="app-features">
+                            <li>
+                                <i class="fas fa-microchip"></i>
+                                AI-Driven Form Correction
+                            </li>
+                            <li>
+                                <i class="fas fa-heartbeat"></i>
+                                HRV & Sleep Tracking
+                            </li>
+                            <li>
+                                <i class="fas fa-users"></i>
+                                Global Leaderboards
+                            </li>
+                        </ul>
+                        <a href="#" class="app-btn">Download App</a>
+                    </div>
+                    <div style="flex: 1; min-width: 300px; max-width: 100%; position: relative;" class="app-visual">
+                        <!-- Phone Mockup -->
+                        <div class="phone-mockup">
+                            <div
+                                style="text-align: center; margin-bottom: 30px; border-bottom: 1px solid #333; padding-bottom: 20px;">
+                                <span style="font-size: 0.8rem; opacity: 0.7; color: white;">TODAY'S WORKOUT</span>
+                                <h3 style="color: var(--primary-color);">Leg Day Hypertrophy</h3>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; margin-bottom: 20px; color: white;">
+                                <span>Squats</span>
+                                <span>4 x 8</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; margin-bottom: 20px; color: white;">
+                                <span>Lunges</span>
+                                <span>3 x 12</span>
+                            </div>
+
+                            <!-- Graph / Chart Visual (Replacing empty space) -->
+                            <div style="margin-top: 20px;">
+                                <div
+                                    style="display: flex; justify-content: space-between; align-items: flex-end; height: 100px; gap: 8px;">
+                                    <div
+                                        style="flex: 1; background: var(--primary-color); height: 40%; border-radius: 4px;">
+                                    </div>
+                                    <div
+                                        style="flex: 1; background: var(--primary-color); height: 70%; border-radius: 4px;">
+                                    </div>
+                                    <div
+                                        style="flex: 1; background: var(--primary-color); height: 50%; border-radius: 4px;">
+                                    </div>
+                                    <div
+                                        style="flex: 1; background: var(--primary-color); height: 90%; border-radius: 4px;">
+                                    </div>
+                                    <div
+                                        style="flex: 1; background: var(--primary-color); height: 60%; border-radius: 4px;">
+                                    </div>
+                                </div>
+                                <div
+                                    style="text-align: center; color: white; font-size: 0.7rem; margin-top: 10px; opacity: 0.7; letter-spacing: 1px;">
+                                    WEEKLY ACTIVITY</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Challenges Section (Replacing Gallery) -->
+    <section class="section">
+        <div class="container">
+            <div class="flex-between" style="margin-bottom: 40px; align-items: flex-end;">
+                <div>
+                    <h2 style="margin-bottom: 10px;">Community Challenges</h2>
+                    <p style="color: var(--text-muted); max-width: 600px;">Join 50,000+ athletes competing this week.
+                        Push your limits and win exclusive gear.</p>
+                </div>
+                <a href="#" class="btn">View All Challenges</a>
+            </div>
+
+            <div class="pro-grid-3">
+                <div class="feature-card" style="text-align: left; position: relative; overflow: hidden;">
+                    <div
+                        style="background: var(--primary-color); color: black; font-weight: bold; position: absolute; top: 20px; right: 20px; padding: 5px 10px; border-radius: 4px; font-size: 0.8rem;">
+                        ACTIVE</div>
+                    <i class="fas fa-running feature-icon"></i>
+                    <h3>5K Speed Run</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Beat your personal best. Top 100 runners
+                        qualify for the nationals.</p>
+                    <div style="background: var(--bg-secondary); padding: 15px; border-radius: 8px;">
+                        <div
+                            style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 5px;">
+                            <span>Participants</span>
+                            <strong>12,405</strong>
+                        </div>
+                        <div
+                            style="width: 100%; height: 6px; background: rgba(0,0,0,0.1); border-radius: 3px; overflow: hidden;">
+                            <div style="width: 75%; height: 100%; background: var(--accent-color);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" style="text-align: left; position: relative; overflow: hidden;">
+                    <div
+                        style="background: var(--text-muted); color: white; font-weight: bold; position: absolute; top: 20px; right: 20px; padding: 5px 10px; border-radius: 4px; font-size: 0.8rem;">
+                        STARTING SOON</div>
+                    <i class="fas fa-dumbbell feature-icon"></i>
+                    <h3>The 300 Rep Challenge</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">A brutal mix of pull-ups, deadlifts, and
+                        push-ups. Can you handle it?</p>
+                    <div style="background: var(--bg-secondary); padding: 15px; border-radius: 8px;">
+                        <div
+                            style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 5px;">
+                            <span>Difficulty</span>
+                            <strong style="color: #ff0055;">Extreme</strong>
+                        </div>
+                        <div
+                            style="width: 100%; height: 6px; background: rgba(0,0,0,0.1); border-radius: 3px; overflow: hidden;">
+                            <div style="width: 90%; height: 100%; background: #ff0055;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" style="text-align: left; position: relative; overflow: hidden;">
+                    <div
+                        style="background: var(--primary-color); color: black; font-weight: bold; position: absolute; top: 20px; right: 20px; padding: 5px 10px; border-radius: 4px; font-size: 0.8rem;">
+                        Daily</div>
+                    <i class="fas fa-bullseye feature-icon"></i>
+                    <h3>Accuracy Master</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Precision throwing competition. Hit the
+                        targets to climb the global leaderboard.</p>
+                    <div style="background: var(--bg-secondary); padding: 15px; border-radius: 8px;">
+                        <div
+                            style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 5px;">
+                            <span>Top Score</span>
+                            <strong>9,850 pts</strong>
+                        </div>
+                        <div
+                            style="width: 100%; height: 6px; background: rgba(0,0,0,0.1); border-radius: 3px; overflow: hidden;">
+                            <div style="width: 45%; height: 100%; background: var(--primary-color);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="section"
+        style="background: #0F2027; background: linear-gradient(to right, #2C5364, #203A43, #0F2027); color: white;">
+        <div class="container text-center">
+            <i class="fas fa-leaf" style="font-size: 4rem; color: #4CAF50; margin-bottom: 30px;"></i>
+            <h2 style="margin-bottom: 20px;">Performance for You. <br> Protection for the Planet.</h2>
+            <p style="max-width: 600px; margin: 0 auto 50px; opacity: 0.8;">
+                We are committed to reducing our carbon footprint. By 2028, 100% of our packaging and 80% of our hard
+                goods will be made from recycled ocean plastics and reclaimed industrial steel.
+            </p>
+            <div class="grid-cols-2" style="text-align: left; gap: 40px;">
+                <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
+                    <h3 style="margin-bottom: 10px; color: #4CAF50;">Zero-Waste Factories</h3>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Our manufacturing facilities run on 100% renewable solar
+                        and wind energy.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
+                    <h3 style="margin-bottom: 10px; color: #4CAF50;">Circular Economy</h3>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Trade in your old weights or treadmill for credit. We
+                        melt them down to build the next generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container text-center">
+            <h2 style="margin-bottom: 50px;">What Athletes Say</h2>
+            <div class="grid-cols-2">
+                <div class="info-card" style="text-align: left;">
+                    <div style="color: #FFD700; margin-bottom: 15px;"><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></div>
+                    <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 20px;">"The quality of the hex
+                        dumbbells is unmatched. I've dropped them a thousand times and they still look brand new."</p>
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="Assets/team3.jpg"
+                            style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="margin: 0;">James D.</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Crossfit Coach</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card" style="text-align: left;">
+                    <div style="color: #FFD700; margin-bottom: 15px;"><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></div>
+                    <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 20px;">"Shipping was incredibly fast
+                        to London. The T500 Runner has completely changed my indoor cardio routine."</p>
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="Assets/team2.jpg"
+                            style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="margin: 0;">Sarah L.</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Marathon Runner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Tiers (ProSports Interface) -->
+    <section class="mem-section-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white; margin-bottom: 10px;">Current Subscription Plan</h2>
+                <div
+                    style="display: inline-block; padding: 5px 15px; border: 1px solid #777; border-radius: 20px; font-size: 0.8rem; color: #ccc;">
+                    Free Access</div>
+            </div>
+
+            <div class="mem-cards-container">
+                <!-- Card 1: Monthly -->
+                <div class="mem-card">
+                    <h3 class="mem-title">Monthly</h3>
+                    <p class="mem-desc">Pay monthly for full access to ProSports gear and tips.</p>
+
+                    <div class="mem-img-container">
+                        <img src="Assets/mem_starter.png" alt="Starter Gear" class="mem-img"
+                            style="animation-delay: 0s;">
+                    </div>
+
+                    <div class="mem-price">$29.99<span>/mo</span></div>
+
+                    <button class="mem-btn">Start Plan</button>
+                    <div class="mem-footer-link">View details</div>
+                </div>
+
+                <!-- Card 2: Yearly (Popular) -->
+                <div class="mem-card popular">
+                    <!-- Banner -->
+                    <div class="popular-banner">Most Popular</div>
+
+                    <h3 class="mem-title">Yearly</h3>
+                    <p class="mem-desc">Pay yearly for access to ProSports with max savings.</p>
+
+                    <div class="mem-img-container">
+                        <img src="Assets/mem_pro.png" alt="Pro Gear" class="mem-img" style="animation-delay: 1s;">
+                    </div>
+
+                    <div class="mem-price">$15.49<span>/mo</span></div>
+                    <div class="mem-price-sub">$185.88 billed annually</div>
+                    <div style="color: #aeb0c2; margin-bottom: 20px;">Save 49%</div>
+
+                    <button class="mem-btn">Start Plan</button>
+                    <div class="mem-footer-link">View details</div>
+                </div>
+
+                <!-- Card 3: Supporter (Lifetime) -->
+                <div class="mem-card">
+                    <h3 class="mem-title">Team Sponsor</h3>
+                    <p class="mem-desc">Support ProSports and get lifetime gym access.</p>
+
+                    <div class="mem-img-container">
+                        <img src="Assets/mem_team.png" alt="Team Bundle" class="mem-img" style="animation-delay: 2s;">
+                    </div>
+
+                    <div class="mem-price">$1500</div>
+                    <div class="mem-price-sub">One-time payment.</div>
+
+                    <button class="mem-btn" style="background: linear-gradient(90deg, #aa00ff, #e91e63);">Purchase
+                        Lifetime</button>
+                    <div class="mem-footer-link">View details</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center" style="margin-bottom: 40px;">Common Questions</h2>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="info-card faq-item" style="cursor: pointer;">
+                    <div class="flex-between">
+                        <h4>Do you offer international shipping?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.95rem;">
+                            Yes, we ship to over 100 countries worldwide. Shipping costs and delivery times vary by
+                            location.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-card faq-item" style="cursor: pointer;">
+                    <div class="flex-between">
+                        <h4>What is the warranty period?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.95rem;">
+                            We offer a 2-year comprehensive warranty on all mechanical parts and a lifetime warranty on
+                            frames.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-card faq-item" style="cursor: pointer;">
+                    <div class="flex-between">
+                        <h4>Can I return opened items?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.95rem;">
+                            Yes, within 30 days of purchase, provided the item is in its original packaging and in
+                            like-new condition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="faq.html" class="btn btn-outline">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-elaborate">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col" data-animate="fade-up">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; text-decoration: none;">
+                        <i class="fas fa-dumbbell" style="color: var(--primary-color);"></i> PROSPORT
+                    </a>
+                    <p style="color: #999; line-height: 1.8; margin-bottom: 25px;">
+                        The world's premier destination for high-performance athletic equipment. We empower athletes to
+                        surpass their limits through innovation and superior design.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.1s;">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="products.html">Best Sellers</a></li>
+                        <li><a href="products.html">Men's Equipment</a></li>
+                        <li><a href="products.html">Women's Gear</a></li>
+                        <li><a href="products.html">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.2s;">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Order Status</a></li>
+                        <li><a href="contact.html">Shipping & Returns</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.3s;">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div
+                        style="margin-top: 25px; display: flex; align-items: center; gap: 10px; color: #777; font-size: 0.8rem;">
+                        <i class="fas fa-lock"></i> Secure 256-bit SSL encryption.
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 ProSport Inc. All rights reserved.</div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart (2)</h3>
+            <button class="icon-btn close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="Assets/hex_dumbbell.jpg" alt="Product">
+                <div>
+                    <h4>Hex Dumbbells</h4>
+                    <p>$49.99 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="cart-item">
+                <img src="Assets/water_bottle.jpg" alt="Product">
+                <div>
+                    <h4>Elite Bottle</h4>
+                    <p>$25.00 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="flex-between" style="margin-bottom: 20px; font-weight: bold;">
+                <span>Total</span>
+                <span class="cart-total">$74.99</span>
+            </div>
+            <a href="#" class="btn" style="width: 100%; text-align: center;">Checkout</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

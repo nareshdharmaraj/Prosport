@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSport - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-dumbbell"></i> PROSPORT
+                </a>
+                <ul class="nav-links">
+                    <li class="mobile-nav-header">
+                        <div class="mobile-logo">
+                            <i class="fas fa-dumbbell"></i> PROSPORT
+                        </div>
+                        <button class="mobile-close-btn"><i class="fas fa-times"></i></button>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Home - 1</a></li>
+                            <li><a href="index2.html">Home - 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Dashboard <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="user-dashboard.html">User Dashboard</a></li>
+                            <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="icon-btn rtl-toggle" title="Toggle RTL"><i class="fas fa-globe"></i></button>
+                    <button class="icon-btn theme-toggle" title="Toggle Theme"><i class="far fa-moon"></i></button>
+                    <a href="login.html" class="btn btn-outline"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-width: 1px; border-radius: 8px;">Login</a>
+                    <a href="register.html" class="btn"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-radius: 8px; color: black;">Register</a>
+                    <button class="icon-btn cart-toggle" title="Cart" style="position: relative;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">2</span>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <h3 style="margin-bottom: 20px; padding-left: 15px;">Admin Panel</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active" data-section="dashboard"><i class="fas fa-tachometer-alt"></i>
+                        Dashboard</a></li>
+                <li><a href="#" data-section="users"><i class="fas fa-users"></i> Users</a></li>
+                <li><a href="#" data-section="products"><i class="fas fa-box"></i> Products</a></li>
+                <li><a href="#" data-section="analytics"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                <li><a href="#" data-section="settings"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main style="padding: 30px; width: 100%;">
+            <div class="container">
+
+                <!-- === DASHBOARD OVERVIEW SECTION === -->
+                <div id="section-dashboard" class="dashboard-section active">
+                    <h1 style="margin-bottom: 30px;">Admin Overview</h1>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: linear-gradient(135deg, #00c853, #b2ff59); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-dollar-sign" style="font-size: 1.3rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h3 style="margin: 0; font-size: 0.9rem; opacity: 0.7;">Total Revenue</h3>
+                                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color);">
+                                        $45,231</div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; font-size: 0.85rem; color: #4caf50;"><i
+                                    class="fas fa-arrow-up"></i> +12% vs last month</div>
+                        </div>
+                        <div class="stat-card">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: linear-gradient(135deg, #2196f3, #4fc3f7); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-users" style="font-size: 1.3rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h3 style="margin: 0; font-size: 0.9rem; opacity: 0.7;">Active Users</h3>
+                                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color);">1,204
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; font-size: 0.85rem; color: #2196f3;"><i
+                                    class="fas fa-arrow-up"></i> +5% vs last month</div>
+                        </div>
+                        <div class="stat-card">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff5722, #ff8a65); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-clock" style="font-size: 1.3rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h3 style="margin: 0; font-size: 0.9rem; opacity: 0.7;">Pending Orders</h3>
+                                    <div style="font-size: 2rem; font-weight: bold; color: #ff5722;">23</div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; font-size: 0.85rem; color: #ff9800;"><i
+                                    class="fas fa-exclamation-circle"></i> Requires attention</div>
+                        </div>
+                        <div class="stat-card">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: linear-gradient(135deg, #9c27b0, #e040fb); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-box" style="font-size: 1.3rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h3 style="margin: 0; font-size: 0.9rem; opacity: 0.7;">Total Products</h3>
+                                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color);">450
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; font-size: 0.85rem; color: #9c27b0;"><i
+                                    class="fas fa-check-circle"></i> 12 new this week</div>
+                        </div>
+                        <div class="stat-card">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: linear-gradient(135deg, #00bcd4, #84ffff); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-shopping-cart" style="font-size: 1.3rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h3 style="margin: 0; font-size: 0.9rem; opacity: 0.7;">New Orders Today</h3>
+                                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color);">38
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; font-size: 0.85rem; color: #00bcd4;"><i
+                                    class="fas fa-chart-line"></i> $4,580 in sales</div>
+                        </div>
+                        <div class="stat-card">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff4081, #ff80ab); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-percentage" style="font-size: 1.3rem; color: white;"></i>
+                                </div>
+                                <div>
+                                    <h3 style="margin: 0; font-size: 0.9rem; opacity: 0.7;">Conversion Rate</h3>
+                                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color);">3.2%
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; font-size: 0.85rem; color: #e91e63;"><i
+                                    class="fas fa-arrow-up"></i> +0.4% this week</div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics Row 1: Sales & Revenue -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Sales Analytics (Bar Chart) -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Sales Analytics</h3>
+                                <div class="chart-controls">
+                                    <button class="active">2025</button>
+                                    <button>2024</button>
+                                </div>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 30%;" title="Jan">
+                                    <div class="bar-tooltip">$12k</div>
+                                    <div class="bar-label">Jan</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 50%;" title="Feb">
+                                    <div class="bar-tooltip">$24k</div>
+                                    <div class="bar-label">Feb</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 40%;" title="Mar">
+                                    <div class="bar-tooltip">$18k</div>
+                                    <div class="bar-label">Mar</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 70%;" title="Apr">
+                                    <div class="bar-tooltip">$35k</div>
+                                    <div class="bar-label">Apr</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 60%;" title="May">
+                                    <div class="bar-tooltip">$28k</div>
+                                    <div class="bar-label">May</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 80%; background: var(--primary-color);"
+                                    title="Jun">
+                                    <div class="bar-tooltip">$42k</div>
+                                    <div class="bar-label">Jun</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 55%;" title="Jul">
+                                    <div class="bar-tooltip">$26k</div>
+                                    <div class="bar-label">Jul</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 75%;" title="Aug">
+                                    <div class="bar-tooltip">$38k</div>
+                                    <div class="bar-label">Aug</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 90%;" title="Sep">
+                                    <div class="bar-tooltip">$45k</div>
+                                    <div class="bar-label">Sep</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Revenue Distribution (Donut Chart) -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Revenue Mix</h3>
+                            </div>
+                            <div class="donut-chart-wrap">
+                                <div class="donut-circle"
+                                    style="background: conic-gradient(#00ff88 0% 40%, #00d2ff 40% 70%, #ff0055 70% 100%);">
+                                    <div class="donut-inner">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">$45k</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.7;">Total</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donut-legend">
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #00ff88;"></div> Equipment 40%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #00d2ff;"></div> Apparel 30%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #ff0055;"></div> Digital 30%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics Row 2: User Growth (Line Chart) -->
+                    <div class="mockup-chart-container" style="margin-bottom: 30px;">
+                        <div class="chart-header">
+                            <h3 style="margin:0;">User Growth Trends</h3>
+                            <div class="chart-controls">
+                                <button class="active">Monthly</button>
+                                <button>Yearly</button>
+                            </div>
+                        </div>
+                        <div class="line-chart-svg">
+                            <svg width="100%" height="100%" viewBox="0 0 800 200" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="growthGradient" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.2" />
+                                        <stop offset="100%" stop-color="#00d2ff" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    d="M0,180 L100,160 L200,140 L300,100 L400,120 L500,80 L600,60 L700,40 L800,20 V200 H0 Z"
+                                    fill="url(#growthGradient)" />
+                                <path class="chart-line-path"
+                                    d="M0,180 L100,160 L200,140 L300,100 L400,120 L500,80 L600,60 L700,40 L800,20"
+                                    style="stroke: #00d2ff;" />
+                                <circle cx="100" cy="160" class="chart-point" style="stroke: #00d2ff;">
+                                    <title>Jan: 1000 Users</title>
+                                </circle>
+                                <circle cx="300" cy="100" class="chart-point" style="stroke: #00d2ff;">
+                                    <title>Mar: 2500 Users</title>
+                                </circle>
+                                <circle cx="500" cy="80" class="chart-point" style="stroke: #00d2ff;">
+                                    <title>May: 3200 Users</title>
+                                </circle>
+                                <circle cx="700" cy="40" class="chart-point" style="stroke: #00d2ff;">
+                                    <title>Jul: 4800 Users</title>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- System Health Section -->
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="margin-bottom: 20px;">System Health</h3>
+                        <div class="system-health-grid">
+                            <div
+                                style="background: var(--card-bg); padding: 25px; border-radius: 10px; border-left: 5px solid #00ff88;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div>
+                                        <h4 style="margin-bottom: 5px;">Server Load</h4>
+                                        <p style="opacity: 0.7; font-size: 0.9rem;">US-East-1</p>
+                                    </div>
+                                    <i class="fas fa-server" style="color: #00ff88; font-size: 1.5rem;"></i>
+                                </div>
+                                <div style="font-size: 2rem; font-weight: bold; margin-top: 15px;">24%</div>
+                            </div>
+                            <div
+                                style="background: var(--card-bg); padding: 25px; border-radius: 10px; border-left: 5px solid #00d2ff;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div>
+                                        <h4 style="margin-bottom: 5px;">Database</h4>
+                                        <p style="opacity: 0.7; font-size: 0.9rem;">PostgreSQL</p>
+                                    </div>
+                                    <i class="fas fa-database" style="color: #00d2ff; font-size: 1.5rem;"></i>
+                                </div>
+                                <div style="font-size: 2rem; font-weight: bold; margin-top: 15px;">Healthy</div>
+                            </div>
+                            <div
+                                style="background: var(--card-bg); padding: 25px; border-radius: 10px; border-left: 5px solid #ff0055;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div>
+                                        <h4 style="margin-bottom: 5px;">API Latency</h4>
+                                        <p style="opacity: 0.7; font-size: 0.9rem;">Global Avg</p>
+                                    </div>
+                                    <i class="fas fa-bolt" style="color: #ff0055; font-size: 1.5rem;"></i>
+                                </div>
+                                <div style="font-size: 2rem; font-weight: bold; margin-top: 15px;">42ms</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === USERS SECTION === -->
+                <div id="section-users" class="dashboard-section">
+                    <div class="dashboard-header-flex">
+                        <h1>User Management</h1>
+                        <button class="btn">Add New User</button>
+                    </div>
+
+                    <!-- New User Activity Chart -->
+                    <div class="mockup-chart-container" style="margin-bottom: 30px;">
+                        <div class="chart-header">
+                            <h3 style="margin:0;">New User Registrations (Last 7 Days)</h3>
+                        </div>
+                        <div class="bar-chart-wrap" style="height: 200px;">
+                            <div class="interactive-bar" style="height: 40%;" title="Mon">
+                                <div class="bar-tooltip">Mon: 45</div>
+                                <div class="bar-label">Mon</div>
+                            </div>
+                            <div class="interactive-bar" style="height: 60%;" title="Tue">
+                                <div class="bar-tooltip">Tue: 68</div>
+                                <div class="bar-label">Tue</div>
+                            </div>
+                            <div class="interactive-bar" style="height: 50%;" title="Wed">
+                                <div class="bar-tooltip">Wed: 52</div>
+                                <div class="bar-label">Wed</div>
+                            </div>
+                            <div class="interactive-bar" style="height: 80%; background: var(--primary-color);"
+                                title="Thu">
+                                <div class="bar-tooltip">Thu: 90</div>
+                                <div class="bar-label">Thu</div>
+                            </div>
+                            <div class="interactive-bar" style="height: 65%;" title="Fri">
+                                <div class="bar-tooltip">Fri: 72</div>
+                                <div class="bar-label">Fri</div>
+                            </div>
+                            <div class="interactive-bar" style="height: 45%;" title="Sat">
+                                <div class="bar-tooltip">Sat: 50</div>
+                                <div class="bar-label">Sat</div>
+                            </div>
+                            <div class="interactive-bar" style="height: 30%;" title="Sun">
+                                <div class="bar-tooltip">Sun: 35</div>
+                                <div class="bar-label">Sun</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional User Charts -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- User Retention -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">User Retention Rate</h3>
+                                <div class="chart-controls">
+                                    <button class="active">Weekly</button>
+                                    <button>Monthly</button>
+                                </div>
+                            </div>
+                            <div class="line-chart-svg">
+                                <svg width="100%" height="100%" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="retentionGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#4caf50" stop-opacity="0.3" />
+                                            <stop offset="100%" stop-color="#4caf50" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0,60 L66,55 L133,50 L200,45 L266,40 L333,35 L400,30 V150 H0 Z"
+                                        fill="url(#retentionGrad)" />
+                                    <path d="M0,60 L66,55 L133,50 L200,45 L266,40 L333,35 L400,30" fill="none"
+                                        stroke="#4caf50" stroke-width="3" stroke-linecap="round" />
+                                    <circle cx="400" cy="30" r="5" fill="#fff" stroke="#4caf50" stroke-width="2">
+                                        <title>Current: 92%</title>
+                                    </circle>
+                                </svg>
+                            </div>
+                            <div style="text-align: center; margin-top: 10px;">
+                                <span style="font-size: 1.5rem; font-weight: bold; color: #4caf50;">92%</span>
+                                <span style="font-size: 0.85rem; opacity: 0.7; margin-left: 10px;"><i
+                                        class="fas fa-arrow-up"></i> +3% from last week</span>
+                            </div>
+                        </div>
+
+                        <!-- User Location -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Users by Region</h3>
+                            </div>
+                            <div class="bar-chart-wrap" style="height: 180px;">
+                                <div class="interactive-bar"
+                                    style="height: 90%; background: linear-gradient(to top, #2196f3, #64b5f6);"
+                                    title="USA: 45%">
+                                    <div class="bar-tooltip">45%</div>
+                                    <div class="bar-label">USA</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 60%; background: linear-gradient(to top, #4caf50, #81c784);"
+                                    title="Europe: 28%">
+                                    <div class="bar-tooltip">28%</div>
+                                    <div class="bar-label">EU</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 35%; background: linear-gradient(to top, #ff9800, #ffb74d);"
+                                    title="Asia: 15%">
+                                    <div class="bar-tooltip">15%</div>
+                                    <div class="bar-label">Asia</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 20%; background: linear-gradient(to top, #9c27b0, #ce93d8);"
+                                    title="Other: 12%">
+                                    <div class="bar-tooltip">12%</div>
+                                    <div class="bar-label">Other</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table
+                            style="width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 10px; overflow: hidden;">
+                            <thead>
+                                <tr style="background: var(--bg-secondary); text-align: left;">
+                                    <th style="padding: 15px;">User ID</th>
+                                    <th style="padding: 15px;">Name</th>
+                                    <th style="padding: 15px;">Email</th>
+                                    <th style="padding: 15px;">Role</th>
+                                    <th style="padding: 15px;">Status</th>
+                                    <th style="padding: 15px;">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 15px;">#U-001</td>
+                                    <td style="padding: 15px;">Alex Johnson</td>
+                                    <td style="padding: 15px;">alex@example.com</td>
+                                    <td style="padding: 15px;">Admin</td>
+                                    <td style="padding: 15px;"><span
+                                            style="color: #00ff88; font-weight: bold;">Active</span></td>
+                                    <td style="padding: 15px;"><button class="btn btn-sm">Edit</button></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color);">
+                                    <td style="padding: 15px;">#U-002</td>
+                                    <td style="padding: 15px;">Sarah Smith</td>
+                                    <td style="padding: 15px;">sarah@example.com</td>
+                                    <td style="padding: 15px;">Customer</td>
+                                    <td style="padding: 15px;"><span
+                                            style="color: #00ff88; font-weight: bold;">Active</span></td>
+                                    <td style="padding: 15px;"><button class="btn btn-sm">Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px;">#U-003</td>
+                                    <td style="padding: 15px;">Mike Brown</td>
+                                    <td style="padding: 15px;">mike@example.com</td>
+                                    <td style="padding: 15px;">Customer</td>
+                                    <td style="padding: 15px;"><span
+                                            style="color: #ff0055; font-weight: bold;">Banned</span></td>
+                                    <td style="padding: 15px;"><button class="btn btn-sm"
+                                            style="background: #ff0055;">Unban</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- === PRODUCTS SECTION === -->
+                <div id="section-products" class="dashboard-section">
+                    <div class="dashboard-header-flex">
+                        <h1>Product Catalog</h1>
+                        <button class="btn">Add Product</button>
+                    </div>
+
+                    <!-- Products Charts Grid -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Inventory Status</h3>
+                            </div>
+                            <div class="bar-chart-wrap" style="height: 150px;">
+                                <div class="interactive-bar" style="height: 80%; background: var(--primary-color);"
+                                    title="In Stock: 850">
+                                    <div class="bar-tooltip">850</div>
+                                    <div class="bar-label">Stock</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 20%; background: #ffaa00;"
+                                    title="Low Stock: 45">
+                                    <div class="bar-tooltip">45</div>
+                                    <div class="bar-label">Low</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 5%; background: #ff0055;"
+                                    title="Out of Stock: 12">
+                                    <div class="bar-tooltip">12</div>
+                                    <div class="bar-label">Out</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Categories</h3>
+                            </div>
+                            <div class="donut-chart-wrap">
+                                <div class="donut-circle"
+                                    style="background: conic-gradient(#00d2ff 0% 50%, #ff0055 50% 80%, #ffaa00 80% 100%);">
+                                    <div class="donut-inner">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">450</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.7;">Products</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donut-legend">
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #00d2ff;"></div> Gear 50%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #ff0055;"></div> Clothing 30%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #ffaa00;"></div> Nutrition 20%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Product Charts -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Top Selling Products -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Top Selling Products</h3>
+                            </div>
+                            <div class="bar-chart-wrap" style="height: 200px;">
+                                <div class="interactive-bar"
+                                    style="height: 95%; background: linear-gradient(to top, var(--primary-color), #8bc34a);"
+                                    title="Pro Runner: 128 sold">
+                                    <div class="bar-tooltip">128</div>
+                                    <div class="bar-label">Runner</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 75%; background: linear-gradient(to top, #2196f3, #64b5f6);"
+                                    title="Dumbbells: 96 sold">
+                                    <div class="bar-tooltip">96</div>
+                                    <div class="bar-label">Weights</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 60%; background: linear-gradient(to top, #9c27b0, #ce93d8);"
+                                    title="Yoga Mat: 84 sold">
+                                    <div class="bar-tooltip">84</div>
+                                    <div class="bar-label">Yoga</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 45%; background: linear-gradient(to top, #ff9800, #ffb74d);"
+                                    title="Gloves: 62 sold">
+                                    <div class="bar-tooltip">62</div>
+                                    <div class="bar-label">Gloves</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 30%; background: linear-gradient(to top, #e91e63, #f48fb1);"
+                                    title="Bottles: 45 sold">
+                                    <div class="bar-tooltip">45</div>
+                                    <div class="bar-label">Bottles</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Performance -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Monthly Sales Trend</h3>
+                                <div class="chart-controls">
+                                    <button class="active">Units</button>
+                                    <button>Revenue</button>
+                                </div>
+                            </div>
+                            <div class="line-chart-svg">
+                                <svg width="100%" height="100%" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="salesTrendGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#9c27b0" stop-opacity="0.3" />
+                                            <stop offset="100%" stop-color="#9c27b0" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path
+                                        d="M0,120 L50,100 L100,110 L150,80 L200,90 L250,60 L300,70 L350,40 L400,50 V150 H0 Z"
+                                        fill="url(#salesTrendGrad)" />
+                                    <path d="M0,120 L50,100 L100,110 L150,80 L200,90 L250,60 L300,70 L350,40 L400,50"
+                                        fill="none" stroke="#9c27b0" stroke-width="3" stroke-linecap="round" />
+                                    <circle cx="350" cy="40" r="5" fill="#4caf50" stroke="#fff" stroke-width="2">
+                                        <title>Peak: 450 units</title>
+                                    </circle>
+                                </svg>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; font-size: 0.8rem; opacity: 0.7; margin-top: 10px;">
+                                <span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Reviews Summary -->
+                    <div class="mockup-chart-container" style="margin-bottom: 30px;">
+                        <div class="chart-header">
+                            <h3 style="margin:0;">Customer Reviews Summary</h3>
+                            <span style="font-size: 1.2rem; color: #ffb74d;"><i class="fas fa-star"></i> 4.6 avg</span>
+                        </div>
+                        <div style="padding: 20px; display: flex; gap: 30px; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 200px;">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                    <span>5 ★</span>
+                                    <div
+                                        style="flex: 1; background: var(--border-color); height: 12px; border-radius: 6px; overflow: hidden;">
+                                        <div
+                                            style="width: 65%; height: 100%; background: linear-gradient(90deg, #4caf50, #8bc34a);">
+                                        </div>
+                                    </div>
+                                    <span style="font-size: 0.85rem;">65%</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                    <span>4 ★</span>
+                                    <div
+                                        style="flex: 1; background: var(--border-color); height: 12px; border-radius: 6px; overflow: hidden;">
+                                        <div
+                                            style="width: 20%; height: 100%; background: linear-gradient(90deg, #8bc34a, #cddc39);">
+                                        </div>
+                                    </div>
+                                    <span style="font-size: 0.85rem;">20%</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                    <span>3 ★</span>
+                                    <div
+                                        style="flex: 1; background: var(--border-color); height: 12px; border-radius: 6px; overflow: hidden;">
+                                        <div
+                                            style="width: 10%; height: 100%; background: linear-gradient(90deg, #ffeb3b, #ffc107);">
+                                        </div>
+                                    </div>
+                                    <span style="font-size: 0.85rem;">10%</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                    <span>2 ★</span>
+                                    <div
+                                        style="flex: 1; background: var(--border-color); height: 12px; border-radius: 6px; overflow: hidden;">
+                                        <div
+                                            style="width: 3%; height: 100%; background: linear-gradient(90deg, #ff9800, #ff5722);">
+                                        </div>
+                                    </div>
+                                    <span style="font-size: 0.85rem;">3%</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span>1 ★</span>
+                                    <div
+                                        style="flex: 1; background: var(--border-color); height: 12px; border-radius: 6px; overflow: hidden;">
+                                        <div
+                                            style="width: 2%; height: 100%; background: linear-gradient(90deg, #f44336, #d32f2f);">
+                                        </div>
+                                    </div>
+                                    <span style="font-size: 0.85rem;">2%</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 10px; min-width: 150px;">
+                                <div
+                                    style="text-align: center; padding: 15px; background: var(--bg-secondary); border-radius: 10px;">
+                                    <div style="font-size: 1.8rem; font-weight: bold; color: var(--primary-color);">
+                                        1,234</div>
+                                    <div style="font-size: 0.85rem; opacity: 0.7;">Total Reviews</div>
+                                </div>
+                                <div
+                                    style="text-align: center; padding: 15px; background: var(--bg-secondary); border-radius: 10px;">
+                                    <div style="font-size: 1.5rem; font-weight: bold; color: #4caf50;">+48</div>
+                                    <div style="font-size: 0.85rem; opacity: 0.7;">This Week</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === ANALYTICS SECTION === -->
+                <div id="section-analytics" class="dashboard-section">
+                    <h1 style="margin-bottom: 30px;">Detailed Analytics</h1>
+
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Traffic Sources -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Traffic Sources</h3>
+                            </div>
+                            <div class="donut-chart-wrap">
+                                <div class="donut-circle"
+                                    style="background: conic-gradient(#3b82f6 0% 45%, #ec4899 45% 70%, #10b981 70% 90%, #f59e0b 90% 100%);">
+                                    <div class="donut-inner">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">50k</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.7;">Visits</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donut-legend" style="margin-top: 15px;">
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #3b82f6;"></div> Organic (45%)
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #ec4899;"></div> Social (25%)
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #10b981;"></div> Direct (20%)
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #f59e0b;"></div> Referral (10%)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Session Duration -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Avg Session Duration (min)</h3>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 40%;" title="Mon: 3.5m">
+                                    <div class="bar-tooltip">3.5m</div>
+                                    <div class="bar-label">Mon</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 60%;" title="Tue: 4.8m">
+                                    <div class="bar-tooltip">4.8m</div>
+                                    <div class="bar-label">Tue</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 50%;" title="Wed: 4.2m">
+                                    <div class="bar-tooltip">4.2m</div>
+                                    <div class="bar-label">Wed</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 80%; background: var(--primary-color);"
+                                    title="Thu: 6.1m">
+                                    <div class="bar-tooltip">6.1m</div>
+                                    <div class="bar-label">Thu</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 55%;" title="Fri: 4.5m">
+                                    <div class="bar-tooltip">4.5m</div>
+                                    <div class="bar-label">Fri</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 35%;" title="Sat: 3.2m">
+                                    <div class="bar-tooltip">3.2m</div>
+                                    <div class="bar-label">Sat</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 45%;" title="Sun: 3.8m">
+                                    <div class="bar-tooltip">3.8m</div>
+                                    <div class="bar-label">Sun</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conversion Trends -->
+                    <div class="mockup-chart-container">
+                        <div class="chart-header">
+                            <h3 style="margin:0;">Conversion Rate (%)</h3>
+                            <div class="chart-controls">
+                                <button class="active">30 Days</button>
+                                <button>90 Days</button>
+                            </div>
+                        </div>
+                        <div class="line-chart-svg">
+                            <svg width="100%" height="100%" viewBox="0 0 600 200" preserveAspectRatio="none">
+                                <path
+                                    d="M0,150 L50,140 L100,160 L150,120 L200,100 L250,110 L300,80 L350,60 L400,90 L450,70 L500,40 L550,50 L600,20"
+                                    fill="none" stroke="var(--primary-color)" stroke-width="4" />
+                                <circle cx="300" cy="80" r="5" fill="#fff" stroke="var(--primary-color)"
+                                    stroke-width="2">
+                                    <title>Mid-Month Spike</title>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === SETTINGS SECTION === -->
+                <div id="section-settings" class="dashboard-section">
+                    <h1 style="margin-bottom: 30px;">System Settings</h1>
+
+                    <!-- Server Load Mockup -->
+                    <div class="mockup-chart-container" style="margin-bottom: 30px;">
+                        <div class="chart-header">
+                            <h3 style="margin:0;">Server CPU Load History</h3>
+                        </div>
+                        <div class="line-chart-svg">
+                            <!-- Complex jagged line for CPU -->
+                            <svg width="100%" height="150" viewBox="0 0 600 150" preserveAspectRatio="none">
+                                <polyline
+                                    points="0,120 20,110 40,130 60,90 80,100 100,60 120,80 140,50 160,70 180,40 200,60 220,100 240,80 260,110 280,70 300,50 320,80 340,60 360,90 380,50 400,70 420,40 440,60 460,30 480,50 500,80 520,60 540,90 560,70 580,40 600,60"
+                                    style="fill:none; stroke:#ff0055; stroke-width:2;" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Additional System Charts -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Memory Usage -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Memory Usage</h3>
+                                <span style="font-size: 0.9rem; color: #4caf50;"><i class="fas fa-circle"></i>
+                                    Healthy</span>
+                            </div>
+                            <div style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
+                                <div style="position: relative; width: 150px; height: 150px;">
+                                    <svg width="150" height="150" viewBox="0 0 150 150">
+                                        <circle cx="75" cy="75" r="60" fill="none" stroke="var(--border-color)"
+                                            stroke-width="12" />
+                                        <circle cx="75" cy="75" r="60" fill="none" stroke="#2196f3" stroke-width="12"
+                                            stroke-dasharray="377" stroke-dashoffset="150" transform="rotate(-90 75 75)"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <div
+                                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                                        <div style="font-size: 1.8rem; font-weight: bold;">62%</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.7;">4.96 / 8 GB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Database Stats -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Database Performance</h3>
+                            </div>
+                            <div class="bar-chart-wrap" style="height: 180px;">
+                                <div class="interactive-bar"
+                                    style="height: 30%; background: linear-gradient(to top, #4caf50, #8bc34a);"
+                                    title="Read: 12ms">
+                                    <div class="bar-tooltip">12ms</div>
+                                    <div class="bar-label">Read</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 45%; background: linear-gradient(to top, #2196f3, #64b5f6);"
+                                    title="Write: 18ms">
+                                    <div class="bar-tooltip">18ms</div>
+                                    <div class="bar-label">Write</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 25%; background: linear-gradient(to top, #ff9800, #ffb74d);"
+                                    title="Query: 8ms">
+                                    <div class="bar-tooltip">8ms</div>
+                                    <div class="bar-label">Query</div>
+                                </div>
+                                <div class="interactive-bar"
+                                    style="height: 55%; background: linear-gradient(to top, #9c27b0, #ce93d8);"
+                                    title="Index: 22ms">
+                                    <div class="bar-tooltip">22ms</div>
+                                    <div class="bar-label">Index</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- API Response Time -->
+                    <div class="mockup-chart-container" style="margin-bottom: 30px;">
+                        <div class="chart-header">
+                            <h3 style="margin:0;">API Response Time (24h)</h3>
+                            <div class="chart-controls">
+                                <button class="active">Today</button>
+                                <button>Week</button>
+                            </div>
+                        </div>
+                        <div class="line-chart-svg" style="height: 150px;">
+                            <svg width="100%" height="100%" viewBox="0 0 600 150" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="apiGrad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#00bcd4" stop-opacity="0.3" />
+                                        <stop offset="100%" stop-color="#00bcd4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    d="M0,80 L50,70 L100,90 L150,60 L200,75 L250,50 L300,65 L350,45 L400,55 L450,40 L500,50 L550,35 L600,45 V150 H0 Z"
+                                    fill="url(#apiGrad)" />
+                                <path
+                                    d="M0,80 L50,70 L100,90 L150,60 L200,75 L250,50 L300,65 L350,45 L400,55 L450,40 L500,50 L550,35 L600,45"
+                                    fill="none" stroke="#00bcd4" stroke-width="3" stroke-linecap="round" />
+                                <circle cx="550" cy="35" r="5" fill="#4caf50" stroke="#fff" stroke-width="2">
+                                    <title>Best: 35ms</title>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div
+                            style="display: flex; justify-content: space-around; margin-top: 15px; padding: 15px; background: var(--bg-secondary); border-radius: 10px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.2rem; font-weight: bold; color: #4caf50;">42ms</div>
+                                <div style="font-size: 0.8rem; opacity: 0.7;">Avg Response</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.2rem; font-weight: bold; color: #2196f3;">99.9%</div>
+                                <div style="font-size: 0.8rem; opacity: 0.7;">Uptime</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.2rem; font-weight: bold; color: #ff9800;">1.2M</div>
+                                <div style="font-size: 0.8rem; opacity: 0.7;">Requests/Day</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mockup-chart-container">
+                        <form style="display: flex; flex-direction: column; gap: 20px;">
+                            <div>
+                                <label style="display: block; margin-bottom: 10px;">Site Name</label>
+                                <input type="text" value="ProSport"
+                                    style="width: 100%; padding: 12px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 10px;">Maintenance Mode</label>
+                                <select
+                                    style="width: 100%; padding: 12px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px;">
+                                    <option value="off">Off</option>
+                                    <option value="on">On</option>
+                                </select>
+                            </div>
+                            <button class="btn" style="align-self: flex-start; margin-top: 10px;">Save
+                                Configuration</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer-elaborate">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col" data-animate="fade-up">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; text-decoration: none;">
+                        <i class="fas fa-dumbbell" style="color: var(--primary-color);"></i> PROSPORT
+                    </a>
+                    <p style="color: #999; line-height: 1.8; margin-bottom: 25px;">
+                        The world's premier destination for high-performance athletic equipment. We empower athletes to
+                        surpass their limits through innovation and superior design.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.1s;">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="shop.html">Men's Equipment</a></li>
+                        <li><a href="shop.html">Women's Gear</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.2s;">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Order Status</a></li>
+                        <li><a href="contact.html">Shipping & Returns</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.3s;">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div
+                        style="margin-top: 25px; display: flex; align-items: center; gap: 10px; color: #777; font-size: 0.8rem;">
+                        <i class="fas fa-lock"></i> Secure 256-bit SSL encryption.
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 ProSport Inc. All rights reserved.</div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart (2)</h3>
+            <button class="icon-btn close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="Assets/hex_dumbbell.jpg" alt="Product">
+                <div>
+                    <h4>Hex Dumbbells</h4>
+                    <p>$49.99 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="cart-item">
+                <img src="Assets/water_bottle.jpg" alt="Product">
+                <div>
+                    <h4>Elite Bottle</h4>
+                    <p>$25.00 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="flex-between" style="margin-bottom: 20px; font-weight: bold;">
+                <span>Total</span>
+                <span class="cart-total">$74.99</span>
+            </div>
+            <a href="#" class="btn" style="width: 100%; text-align: center;">Checkout</a>
+        </div>
+    </div>
+
+    <!-- Script for Tab Switching -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sidebarLinks = document.querySelectorAll('.sidebar-menu a[data-section]');
+            const sections = document.querySelectorAll('.dashboard-section');
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    // Remove active from all links
+                    sidebarLinks.forEach(l => l.classList.remove('active'));
+                    // Add active to clicked
+                    link.classList.add('active');
+
+                    // Hide all sections
+                    sections.forEach(s => s.classList.remove('active'));
+
+                    // Show target section
+                    const sectionId = 'section-' + link.getAttribute('data-section');
+                    const targetSection = document.getElementById(sectionId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

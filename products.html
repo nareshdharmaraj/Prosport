@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSport - All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-dumbbell"></i> PROSPORT
+                </a>
+                <ul class="nav-links">
+                    <!-- Mobile Menu Header -->
+                    <li class="mobile-nav-header">
+                        <div class="mobile-logo">
+                            <i class="fas fa-dumbbell"></i> PROSPORT
+                        </div>
+                        <button class="mobile-close-btn"><i class="fas fa-times"></i></button>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Home - 1</a></li>
+                            <li><a href="index2.html">Home - 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Dashboard <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="user-dashboard.html">User Dashboard</a></li>
+                            <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="icon-btn rtl-toggle" title="Toggle RTL"><i class="fas fa-globe"></i></button>
+                    <button class="icon-btn theme-toggle" title="Toggle Theme"><i class="far fa-moon"></i></button>
+                    <a href="login.html" class="btn btn-outline"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-width: 1px; border-radius: 8px;">Login</a>
+                    <a href="register.html" class="btn"
+                        style="padding: 10px 20px; font-size: 0.9rem; border-radius: 8px; color: black;">Register</a>
+                    <button class="icon-btn cart-toggle" title="Cart" style="position: relative;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">2</span>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Assets/gym-bg3.jpg') no-repeat center center/cover; padding: 100px 0; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; margin-bottom: 10px;" data-animate="fade-down">OUR PRODUCTS</h1>
+            <p data-animate="fade-up" style="font-size: 1.2rem; opacity: 0.9;">Professional grade equipment for every
+                athlete.</p>
+        </div>
+    </section>
+
+    <!-- Shop Grid -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter Bar -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;"
+                data-animate="fade-right">
+                <div>
+                    <span style="font-weight: bold; margin-right: 10px;">Filter By:</span>
+                    <select
+                        style="padding: 10px; border-radius: 5px; border: 1px solid var(--border-color); width: auto; display: inline-block; margin-bottom: 0;">
+                        <option>All Categories</option>
+                        <option>Strength</option>
+                        <option>Cardio</option>
+                        <option>Accessories</option>
+                        <option>Recovery</option>
+                        <option>Electronics</option>
+                    </select>
+                </div>
+                <div>
+                    <span style="font-weight: bold; margin-right: 10px;">Sort By:</span>
+                    <select
+                        style="padding: 10px; border-radius: 5px; border: 1px solid var(--border-color); width: auto; display: inline-block; margin-bottom: 0;">
+                        <option>Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-container">
+                <!-- Products will be injected here via JavaScript -->
+            </div>
+
+            <!-- Pagination -->
+            <div style="margin-top: 60px; display: flex; justify-content: center; gap: 10px;" data-animate="fade-up">
+                <button class="btn btn-outline"
+                    style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="btn"
+                    style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;">1</button>
+                <button class="btn btn-outline"
+                    style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;">2</button>
+                <button class="btn btn-outline"
+                    style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center;"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-elaborate">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col" data-animate="fade-up">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; text-decoration: none;">
+                        <i class="fas fa-dumbbell" style="color: var(--primary-color);"></i> PROSPORT
+                    </a>
+                    <p style="color: #999; line-height: 1.8; margin-bottom: 25px;">
+                        The world's premier destination for high-performance athletic equipment. We empower athletes to
+                        surpass their limits through innovation and superior design.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.1s;">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="products.html">Best Sellers</a></li>
+                        <li><a href="products.html">Men's Equipment</a></li>
+                        <li><a href="products.html">Women's Gear</a></li>
+                        <li><a href="products.html">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.2s;">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Order Status</a></li>
+                        <li><a href="contact.html">Shipping & Returns</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-animate="fade-up" style="transition-delay: 0.3s;">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div
+                        style="margin-top: 25px; display: flex; align-items: center; gap: 10px; color: #777; font-size: 0.8rem;">
+                        <i class="fas fa-lock"></i> Secure 256-bit SSL encryption.
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 ProSport Inc. All rights reserved.</div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart (2)</h3>
+            <button class="icon-btn close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="Assets/hex_dumbbell.jpg" alt="Product">
+                <div>
+                    <h4>Hex Dumbbells</h4>
+                    <p>$49.99 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="cart-item">
+                <img src="Assets/water_bottle.jpg" alt="Product">
+                <div>
+                    <h4>Elite Bottle</h4>
+                    <p>$25.00 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="flex-between" style="margin-bottom: 20px; font-weight: bold;">
+                <span>Total</span>
+                <span class="cart-total">$74.99</span>
+            </div>
+            <a href="#" class="btn" style="width: 100%; text-align: center;">Checkout</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        // Manually Curated Distinct Products (No Repeats)
+        // Strictly Equipment & Gear Only
+        const productsList = [
+            // Heavy Equipment
+            { name: "Pro Runner T500", category: "Cardio", price: "$1,299.00", img: "Assets/treadmill.jpg" },
+            { name: "Air Rower 2000", category: "Cardio", price: "$899.00", img: "Assets/rowing_machine.jpg" },
+            { name: "Adjustable Weight Bench", category: "Strength", price: "$189.00", img: "Assets/bench_press.png", new: true },
+            { name: "Olympic Barbell", category: "Strength", price: "$299.00", img: "Assets/barbell.jpg" },
+
+            // Weights & Resistance
+            { name: "Hex Dumbbell Set", category: "Strength", price: "$49.99", img: "Assets/hex_dumbbell.jpg" },
+            { name: "Kettlebell King 16kg", category: "Strength", price: "$35.00", img: "Assets/kettlebell.jpg" },
+            { name: "Tactical Weighted Vest", category: "Strength", price: "$120.00", img: "Assets/weighted_vest.jpg" },
+            { name: "Resistance Loop Set", category: "Accessories", price: "$19.00", img: "Assets/resistance_bands.jpg" },
+
+            // Functional & Core
+            { name: "Core Ab Roller Pro", category: "Strength", price: "$29.99", img: "Assets/ab_roller.png", new: true },
+            { name: "Speed Jump Rope", category: "Cardio", price: "$15.00", img: "Assets/jump_rope.jpg" },
+            { name: "Yoga Pro Mat", category: "Yoga", price: "$89.00", img: "Assets/yoga_mat.jpg" },
+            { name: "Deep Tissue Roller", category: "Recovery", price: "$35.00", img: "Assets/foam_roller.jpg" },
+
+            // Tech & Accessories
+            { name: "Pro Series Smart Watch", category: "Electronics", price: "$249.99", img: "Assets/smart_watch.png", new: true },
+            { name: "Sprint Spikes V2", category: "Footwear", price: "$110.00", img: "Assets/sprint_spikes.jpg" },
+            { name: "Grip Pro Gloves", category: "Accessories", price: "$22.00", img: "Assets/gloves.jpg" },
+            { name: "Hydrate Elite Bottle", category: "Accessories", price: "$25.00", img: "Assets/water_bottle.jpg" }
+        ];
+
+        const container = document.getElementById('products-container');
+
+        productsList.forEach((p, index) => {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            card.setAttribute('data-animate', 'zoom-in');
+            card.style.transitionDelay = `${index * 0.05}s`;
+
+            card.innerHTML = `
+                <div class="product-image">
+                    <img src="${p.img}" alt="${p.name}">
+                    <button class="icon-btn" style="position: absolute; top: 15px; right: 15px; background: white; border-radius: 50%; width: 35px; height: 35px; color: black; display: flex; align-items: center; justify-content: center;"><i class="far fa-heart"></i></button>
+                    ${p.new ? `<div style="position: absolute; top: 15px; left: 15px; background: var(--accent-color); color: white; padding: 5px 10px; font-weight: bold; border-radius: 4px; font-size: 0.8rem;">NEW</div>` : ''}
+                </div>
+                <div class="product-info">
+                    <h4>${p.name}</h4>
+                    <p style="opacity: 0.6; font-size: 0.9rem;">${p.category}</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                        <span class="price">${p.price}</span>
+                        <button class="icon-btn" style="background: var(--primary-color); border-radius: 50%; color: black; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    </script>
+</body>
+
+</html>
