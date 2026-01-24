@@ -79,7 +79,7 @@
             </ul>
         </aside>
 
-        <main style="padding: 30px; width: 100%;">
+        <main class="dashboard-main">
             <div class="container">
 
                 <!-- === DASHBOARD OVERVIEW SECTION === -->
@@ -298,6 +298,66 @@
                         </div>
                     </div>
 
+                    <!-- New Admin Charts Row 1: Financial & Satisfaction -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Profit Margin Analysis -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Profit Margins</h3>
+                                <div class="chart-controls">
+                                    <button class="active">Q1</button>
+                                    <button>Q2</button>
+                                </div>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 45%; background: var(--secondary-color);"
+                                    title="Elec: 25%">
+                                    <div class="bar-tooltip">Elec: 25%</div>
+                                    <div class="bar-label">Elec</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 65%; background: var(--primary-color);"
+                                    title="Apparel: 45%">
+                                    <div class="bar-tooltip">Apparel: 45%</div>
+                                    <div class="bar-label">Apparel</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 35%; background: #ff9800;" title="Acc: 15%">
+                                    <div class="bar-tooltip">Acc: 15%</div>
+                                    <div class="bar-label">Acc</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 55%; background: #9c27b0;"
+                                    title="Serv: 30%">
+                                    <div class="bar-tooltip">Serv: 30%</div>
+                                    <div class="bar-label">Serv</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Customer Satisfaction -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">CSAT Score</h3>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 200px;">
+                                <div style="position: relative; width: 160px; height: 160px;">
+                                    <svg width="160" height="160" viewBox="0 0 160 160">
+                                        <circle cx="80" cy="80" r="70" fill="none" stroke="var(--bg-secondary)"
+                                            stroke-width="15" />
+                                        <circle cx="80" cy="80" r="70" fill="none" stroke="#00c853" stroke-width="15"
+                                            stroke-dasharray="440" stroke-dashoffset="66" transform="rotate(-90 80 80)"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <div
+                                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                                        <div style="font-size: 2.2rem; font-weight: 800; color: #00c853;">85%</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.7;">Satisfaction</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- System Health Section -->
                     <div style="margin-bottom: 30px;">
                         <h3 style="margin-bottom: 20px;">System Health</h3>
@@ -449,6 +509,63 @@
                                     title="Other: 12%">
                                     <div class="bar-tooltip">12%</div>
                                     <div class="bar-label">Other</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New User Charts Row: Demographics & Tech -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Age Demographics -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Age Demographics</h3>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 20%;" title="18-24">
+                                    <div class="bar-tooltip">15%</div>
+                                    <div class="bar-label">18-24</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 50%; background: var(--primary-color);"
+                                    title="25-34">
+                                    <div class="bar-tooltip">45%</div>
+                                    <div class="bar-label">25-34</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 40%;" title="35-44">
+                                    <div class="bar-tooltip">30%</div>
+                                    <div class="bar-label">35-44</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 15%;" title="45+">
+                                    <div class="bar-tooltip">10%</div>
+                                    <div class="bar-label">45+</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Login Methods -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Login Methods</h3>
+                            </div>
+                            <div class="donut-chart-wrap">
+                                <div class="donut-circle"
+                                    style="background: conic-gradient(#db4437 0% 40%, #4267B2 40% 70%, #333 70% 100%);">
+                                    <div class="donut-inner">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">User</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.7;">Access</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donut-legend">
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #db4437;"></div> Google 40%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #4267B2;"></div> Facebook 30%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #333;"></div> Email 30%
                                 </div>
                             </div>
                         </div>
@@ -710,6 +827,62 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- New Product Charts Row: Returns & Value -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Return Rates -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Return Rates (%)</h3>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 15%; background: #e91e63;"
+                                    title="Shoes: 3%">
+                                    <div class="bar-tooltip">3%</div>
+                                    <div class="bar-label">Shoes</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 25%; background: #e91e63;"
+                                    title="Clothes: 5%">
+                                    <div class="bar-tooltip">5%</div>
+                                    <div class="bar-label">Cloth</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 10%; background: #4caf50;" title="Gym: 2%">
+                                    <div class="bar-tooltip">2%</div>
+                                    <div class="bar-label">Gym</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 8%; background: #4caf50;"
+                                    title="Tech: 1.5%">
+                                    <div class="bar-tooltip">1.5%</div>
+                                    <div class="bar-label">Tech</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stock Value by Warehouse -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Stock Value Distribution</h3>
+                            </div>
+                            <div class="line-chart-svg">
+                                <svg width="100%" height="100%" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                    <path
+                                        d="M0,150 L50,120 L100,50 L150,80 L200,40 L250,90 L300,60 L350,30 L400,80 V150 H0 Z"
+                                        fill="rgba(156, 39, 176, 0.2)" />
+                                    <path d="M0,150 L50,120 L100,50 L150,80 L200,40 L250,90 L300,60 L350,30 L400,80"
+                                        fill="none" stroke="#9c27b0" stroke-width="3" />
+                                    <circle cx="200" cy="40" r="5" fill="#fff" stroke="#9c27b0" stroke-width="2">
+                                        <title>Main Warehouse: $1.2M</title>
+                                    </circle>
+                                </svg>
+                            </div>
+                            <div class="donut-legend" style="margin-top:10px; justify-content: center;">
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #9c27b0;"></div> Total Value: $4.5M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- === ANALYTICS SECTION === -->
@@ -798,170 +971,220 @@
                         </div>
                         <div class="line-chart-svg">
                             <svg width="100%" height="100%" viewBox="0 0 600 200" preserveAspectRatio="none">
-                                <path
-                                    d="M0,150 L50,140 L100,160 L150,120 L200,100 L250,110 L300,80 L350,60 L400,90 L450,70 L500,40 L550,50 L600,20"
-                                    fill="none" stroke="var(--primary-color)" stroke-width="4" />
-                                <circle cx="300" cy="80" r="5" fill="#fff" stroke="var(--primary-color)"
-                                    stroke-width="2">
-                                    <title>Mid-Month Spike</title>
-                                </circle>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- === SETTINGS SECTION === -->
-                <div id="section-settings" class="dashboard-section">
-                    <h1 style="margin-bottom: 30px;">System Settings</h1>
-
-                    <!-- Server Load Mockup -->
-                    <div class="mockup-chart-container" style="margin-bottom: 30px;">
-                        <div class="chart-header">
-                            <h3 style="margin:0;">Server CPU Load History</h3>
-                        </div>
-                        <div class="line-chart-svg">
-                            <!-- Complex jagged line for CPU -->
-                            <svg width="100%" height="150" viewBox="0 0 600 150" preserveAspectRatio="none">
-                                <polyline
-                                    points="0,120 20,110 40,130 60,90 80,100 100,60 120,80 140,50 160,70 180,40 200,60 220,100 240,80 260,110 280,70 300,50 320,80 340,60 360,90 380,50 400,70 420,40 440,60 460,30 480,50 500,80 520,60 540,90 560,70 580,40 600,60"
-                                    style="fill:none; stroke:#ff0055; stroke-width:2;" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- Additional System Charts -->
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
-                        <!-- Memory Usage -->
-                        <div class="mockup-chart-container">
-                            <div class="chart-header">
-                                <h3 style="margin:0;">Memory Usage</h3>
-                                <span style="font-size: 0.9rem; color: #4caf50;"><i class="fas fa-circle"></i>
-                                    Healthy</span>
-                            </div>
-                            <div style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
-                                <div style="position: relative; width: 150px; height: 150px;">
-                                    <svg width="150" height="150" viewBox="0 0 150 150">
-                                        <circle cx="75" cy="75" r="60" fill="none" stroke="var(--border-color)"
-                                            stroke-width="12" />
-                                        <circle cx="75" cy="75" r="60" fill="none" stroke="#2196f3" stroke-width="12"
-                                            stroke-dasharray="377" stroke-dashoffset="150" transform="rotate(-90 75 75)"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                    <div
-                                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                                        <div style="font-size: 1.8rem; font-weight: bold;">62%</div>
-                                        <div style="font-size: 0.8rem; opacity: 0.7;">4.96 / 8 GB</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Database Stats -->
-                        <div class="mockup-chart-container">
-                            <div class="chart-header">
-                                <h3 style="margin:0;">Database Performance</h3>
-                            </div>
-                            <div class="bar-chart-wrap" style="height: 180px;">
-                                <div class="interactive-bar"
-                                    style="height: 30%; background: linear-gradient(to top, #4caf50, #8bc34a);"
-                                    title="Read: 12ms">
-                                    <div class="bar-tooltip">12ms</div>
-                                    <div class="bar-label">Read</div>
-                                </div>
-                                <div class="interactive-bar"
-                                    style="height: 45%; background: linear-gradient(to top, #2196f3, #64b5f6);"
-                                    title="Write: 18ms">
-                                    <div class="bar-tooltip">18ms</div>
-                                    <div class="bar-label">Write</div>
-                                </div>
-                                <div class="interactive-bar"
-                                    style="height: 25%; background: linear-gradient(to top, #ff9800, #ffb74d);"
-                                    title="Query: 8ms">
-                                    <div class="bar-tooltip">8ms</div>
-                                    <div class="bar-label">Query</div>
-                                </div>
-                                <div class="interactive-bar"
-                                    style="height: 55%; background: linear-gradient(to top, #9c27b0, #ce93d8);"
-                                    title="Index: 22ms">
-                                    <div class="bar-tooltip">22ms</div>
-                                    <div class="bar-label">Index</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- API Response Time -->
-                    <div class="mockup-chart-container" style="margin-bottom: 30px;">
-                        <div class="chart-header">
-                            <h3 style="margin:0;">API Response Time (24h)</h3>
-                            <div class="chart-controls">
-                                <button class="active">Today</button>
-                                <button>Week</button>
-                            </div>
-                        </div>
-                        <div class="line-chart-svg" style="height: 150px;">
-                            <svg width="100%" height="100%" viewBox="0 0 600 150" preserveAspectRatio="none">
                                 <defs>
-                                    <linearGradient id="apiGrad" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stop-color="#00bcd4" stop-opacity="0.3" />
-                                        <stop offset="100%" stop-color="#00bcd4" stop-opacity="0" />
+                                    <linearGradient id="convGradient" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#ff4081" stop-opacity="0.3" />
+                                        <stop offset="100%" stop-color="#ff4081" stop-opacity="0" />
                                     </linearGradient>
                                 </defs>
-                                <path
-                                    d="M0,80 L50,70 L100,90 L150,60 L200,75 L250,50 L300,65 L350,45 L400,55 L450,40 L500,50 L550,35 L600,45 V150 H0 Z"
-                                    fill="url(#apiGrad)" />
-                                <path
-                                    d="M0,80 L50,70 L100,90 L150,60 L200,75 L250,50 L300,65 L350,45 L400,55 L450,40 L500,50 L550,35 L600,45"
-                                    fill="none" stroke="#00bcd4" stroke-width="3" stroke-linecap="round" />
-                                <circle cx="550" cy="35" r="5" fill="#4caf50" stroke="#fff" stroke-width="2">
-                                    <title>Best: 35ms</title>
-                                </circle>
+                                <path d="M0,150 L100,140 L200,100 L300,120 L400,80 L500,90 L600,40 V200 H0 Z"
+                                    fill="url(#convGradient)" />
+                                <path d="M0,150 L100,140 L200,100 L300,120 L400,80 L500,90 L600,40" fill="none"
+                                    stroke="#ff4081" stroke-width="3" stroke-linecap="round" />
+                                <circle cx="600" cy="40" r="6" fill="#fff" stroke="#ff4081" stroke-width="2" />
                             </svg>
                         </div>
-                        <div
-                            style="display: flex; justify-content: space-around; margin-top: 15px; padding: 15px; background: var(--bg-secondary); border-radius: 10px;">
-                            <div style="text-align: center;">
-                                <div style="font-size: 1.2rem; font-weight: bold; color: #4caf50;">42ms</div>
-                                <div style="font-size: 0.8rem; opacity: 0.7;">Avg Response</div>
+                    </div>
+
+                    <!-- New Analytics Row: Bounce & Retention -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Bounce Rate -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Bounce Rate Trend</h3>
+                                <div class="chart-controls">
+                                    <button class="active">Daily</button>
+                                </div>
                             </div>
-                            <div style="text-align: center;">
-                                <div style="font-size: 1.2rem; font-weight: bold; color: #2196f3;">99.9%</div>
-                                <div style="font-size: 0.8rem; opacity: 0.7;">Uptime</div>
+                            <div class="line-chart-svg">
+                                <svg width="100%" height="100%" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                    <path d="M0,50 L50,60 L100,40 L150,55 L200,30 L250,45 L300,35 L350,50 L400,40"
+                                        fill="none" stroke="#ff9800" stroke-width="3" stroke-dasharray="5,5" />
+                                    <circle cx="200" cy="30" r="5" fill="#ff9800" />
+                                </svg>
                             </div>
-                            <div style="text-align: center;">
-                                <div style="font-size: 1.2rem; font-weight: bold; color: #ff9800;">1.2M</div>
-                                <div style="font-size: 0.8rem; opacity: 0.7;">Requests/Day</div>
+                            <div style="text-align:center; color: #ff9800; font-weight:bold; margin-top:10px;">Avg: 34%
+                                (Improving)</div>
+                        </div>
+
+                        <!-- Visitor Type -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">New vs Returning</h3>
+                            </div>
+                            <div class="bar-chart-wrap" style="height: 180px;">
+                                <div class="interactive-bar" style="height: 60%; background: #2196f3;" title="New: 60%">
+                                    <div class="bar-tooltip">60%</div>
+                                    <div class="bar-label">New</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 40%; background: #673ab7;"
+                                    title="Return: 40%">
+                                    <div class="bar-tooltip">40%</div>
+                                    <div class="bar-label">Return</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="mockup-chart-container">
-                        <form style="display: flex; flex-direction: column; gap: 20px;">
-                            <div>
-                                <label style="display: block; margin-bottom: 10px;">Site Name</label>
-                                <input type="text" value="ProSport"
-                                    style="width: 100%; padding: 12px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px;">
-                            </div>
-                            <div>
-                                <label style="display: block; margin-bottom: 10px;">Maintenance Mode</label>
-                                <select
-                                    style="width: 100%; padding: 12px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px;">
-                                    <option value="off">Off</option>
-                                    <option value="on">On</option>
-                                </select>
-                            </div>
-                            <button class="btn" style="align-self: flex-start; margin-top: 10px;">Save
-                                Configuration</button>
-                        </form>
-                    </div>
+                    <path
+                        d="M0,150 L50,140 L100,160 L150,120 L200,100 L250,110 L300,80 L350,60 L400,90 L450,70 L500,40 L550,50 L600,20"
+                        fill="none" stroke="var(--primary-color)" stroke-width="4" />
+                    <circle cx="300" cy="80" r="5" fill="#fff" stroke="var(--primary-color)" stroke-width="2">
+                        <title>Mid-Month Spike</title>
+                    </circle>
+                    </svg>
                 </div>
-
             </div>
-        </main>
     </div>
 
-    <footer class="footer-elaborate">
+    <!-- === SETTINGS SECTION === -->
+    <div id="section-settings" class="dashboard-section">
+        <h1 style="margin-bottom: 30px;">System Settings</h1>
+
+        <!-- Server Load Mockup -->
+        <div class="mockup-chart-container" style="margin-bottom: 30px;">
+            <div class="chart-header">
+                <h3 style="margin:0;">Server CPU Load History</h3>
+            </div>
+            <div class="line-chart-svg" style="height: 150px;">
+                <!-- Complex jagged line for CPU -->
+                <svg width="100%" height="150" viewBox="0 0 600 150" preserveAspectRatio="none">
+                    <polyline
+                        points="0,120 20,110 40,130 60,90 80,100 100,60 120,80 140,50 160,70 180,40 200,60 220,100 240,80 260,110 280,70 300,50 320,80 340,60 360,90 380,50 400,70 420,40 440,60 460,30 480,50 500,80 520,60 540,90 560,70 580,40 600,60"
+                        style="fill:none; stroke:#ff0055; stroke-width:2;" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Additional System Charts -->
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+            <!-- Memory Usage -->
+            <div class="mockup-chart-container" style="display: flex; flex-direction: column;">
+                <div class="chart-header">
+                    <h3 style="margin:0;">Memory Usage</h3>
+                    <span style="font-size: 0.9rem; color: #4caf50;"><i class="fas fa-circle"></i>
+                        Healthy</span>
+                </div>
+                <div
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; padding: 20px;">
+                    <div style="position: relative; width: 150px; height: 150px;">
+                        <svg width="150" height="150" viewBox="0 0 150 150">
+                            <circle cx="75" cy="75" r="60" fill="none" stroke="var(--border-color)" stroke-width="12" />
+                            <circle cx="75" cy="75" r="60" fill="none" stroke="#2196f3" stroke-width="12"
+                                stroke-dasharray="377" stroke-dashoffset="150" transform="rotate(-90 75 75)"
+                                stroke-linecap="round" />
+                        </svg>
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                            <div style="font-size: 1.8rem; font-weight: bold;">62%</div>
+                            <div style="font-size: 0.8rem; opacity: 0.7;">4.96 / 8 GB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database Stats -->
+            <div class="mockup-chart-container" style="display: flex; flex-direction: column;">
+                <div class="chart-header">
+                    <h3 style="margin:0;">Database Performance</h3>
+                </div>
+                <div class="bar-chart-wrap" style="height: 180px; flex: 1;">
+                    <div class="interactive-bar"
+                        style="height: 30%; background: linear-gradient(to top, #4caf50, #8bc34a);" title="Read: 12ms">
+                        <div class="bar-tooltip">12ms</div>
+                        <div class="bar-label">Read</div>
+                    </div>
+                    <div class="interactive-bar"
+                        style="height: 45%; background: linear-gradient(to top, #2196f3, #64b5f6);" title="Write: 18ms">
+                        <div class="bar-tooltip">18ms</div>
+                        <div class="bar-label">Write</div>
+                    </div>
+                    <div class="interactive-bar"
+                        style="height: 25%; background: linear-gradient(to top, #ff9800, #ffb74d);" title="Query: 8ms">
+                        <div class="bar-tooltip">8ms</div>
+                        <div class="bar-label">Query</div>
+                    </div>
+                    <div class="interactive-bar"
+                        style="height: 55%; background: linear-gradient(to top, #9c27b0, #ce93d8);" title="Index: 22ms">
+                        <div class="bar-tooltip">22ms</div>
+                        <div class="bar-label">Index</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Response Time -->
+        <div class="mockup-chart-container" style="margin-bottom: 30px;">
+            <div class="chart-header">
+                <h3 style="margin:0;">API Response Time (24h)</h3>
+                <div class="chart-controls">
+                    <button class="active">Today</button>
+                    <button>Week</button>
+                </div>
+            </div>
+            <div class="line-chart-svg" style="height: 150px;">
+                <svg width="100%" height="100%" viewBox="0 0 600 150" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="apiGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#00bcd4" stop-opacity="0.3" />
+                            <stop offset="100%" stop-color="#00bcd4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M0,80 L50,70 L100,90 L150,60 L200,75 L250,50 L300,65 L350,45 L400,55 L450,40 L500,50 L550,35 L600,45 V150 H0 Z"
+                        fill="url(#apiGrad)" />
+                    <path
+                        d="M0,80 L50,70 L100,90 L150,60 L200,75 L250,50 L300,65 L350,45 L400,55 L450,40 L500,50 L550,35 L600,45"
+                        fill="none" stroke="#00bcd4" stroke-width="3" stroke-linecap="round" />
+                    <circle cx="550" cy="35" r="5" fill="#4caf50" stroke="#fff" stroke-width="2">
+                        <title>Best: 35ms</title>
+                    </circle>
+                </svg>
+            </div>
+            <div
+                style="display: flex; justify-content: space-around; margin-top: 15px; padding: 15px; background: var(--bg-secondary); border-radius: 10px;">
+                <div style="text-align: center;">
+                    <div style="font-size: 1.2rem; font-weight: bold; color: #4caf50;">42ms</div>
+                    <div style="font-size: 0.8rem; opacity: 0.7;">Avg Response</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 1.2rem; font-weight: bold; color: #2196f3;">99.9%</div>
+                    <div style="font-size: 0.8rem; opacity: 0.7;">Uptime</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 1.2rem; font-weight: bold; color: #ff9800;">1.2M</div>
+                    <div style="font-size: 0.8rem; opacity: 0.7;">Requests/Day</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mockup-chart-container">
+            <form style="display: flex; flex-direction: column; gap: 20px;">
+                <div>
+                    <label style="display: block; margin-bottom: 10px;">Site Name</label>
+                    <input type="text" value="ProSport"
+                        style="width: 100%; padding: 12px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px;">
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 10px;">Maintenance Mode</label>
+                    <select
+                        style="width: 100%; padding: 12px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px;">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                </div>
+                <button class="btn" style="align-self: flex-start; margin-top: 10px;">Save
+                    Configuration</button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    </main>
+    </div>
+
+    <footer class="footer-elaborate dashboard-footer">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-col" data-animate="fade-up">

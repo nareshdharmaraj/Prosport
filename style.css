@@ -3727,16 +3727,32 @@
  /* === DASHBOARD LAYOUT & SIDEBAR REDESIGN === */
  .dashboard-layout {
      display: flex;
+     flex-direction: row;
+     /* Explicitly set row */
+     flex-wrap: nowrap;
+     /* Prevent wrapping implies side-by-side */
      min-height: 100vh;
-     padding-top: 80px;
-     /* Offset for fixed header */
+ }
+
+ .dashboard-main {
+     flex: 1;
+     /* Grow to fill remaining space */
+     width: 100%;
+     /* Full width of container */
+     margin-left: 280px;
+     /* Push content right to accommodate fixed sidebar */
+     padding: 30px;
+     overflow-x: hidden;
+     /* Handle internal overflow primarily */
  }
 
  .sidebar {
      width: 280px;
      background: var(--card-bg);
      border-right: 1px solid var(--border-color);
-     position: sticky;
+     position: fixed;
+     /* Fixed stability requested */
+     left: 0;
      top: 80px;
      /* Exact height of fixed header */
      height: calc(100vh - 80px);
@@ -3748,6 +3764,17 @@
      padding: 30px 20px;
      box-shadow: 2px 0 20px rgba(0, 0, 0, 0.03);
      z-index: 90;
+ }
+
+ .dashboard-footer {
+     margin-left: 280px;
+     transition: margin-left 0.3s ease;
+ }
+
+ @media (max-width: 900px) {
+     .dashboard-footer {
+         margin-left: 0;
+     }
  }
 
  /* Scrollbar refinement for sidebar */
@@ -3869,6 +3896,12 @@
          flex-direction: column;
      }
 
+     .dashboard-main {
+         margin-left: 0;
+         width: 100%;
+         padding: 20px;
+     }
+
      .sidebar h3 {
          display: none;
          /* Save space on mobile */
@@ -3953,9 +3986,10 @@
  @media (max-width: 600px) {
 
      .dashboard-section .stats-grid,
-     .dashboard-section>div[style*="display: grid"] {
-         grid-template-columns: 1fr !important;
-         place-items: center;
+     .dashboard-section div[style*="display: grid"] {
+         display: flex !important;
+         flex-direction: column;
+         width: 100%;
      }
 
      .chart-header {
@@ -3972,6 +4006,24 @@
          max-width: 100%;
          margin-left: 0;
          margin-right: 0;
+     }
+
+     /* Chart Overflow Fixes */
+     .mockup-chart-container {
+         padding: 15px !important;
+         /* Reduce padding to give content space */
+     }
+
+     .interactive-bar {
+         min-width: 8px !important;
+         /* Allow shrinking */
+     }
+
+     .bar-chart-wrap {
+         gap: 2px !important;
+         /* Tighter gaps */
+         padding-right: 5px;
+         /* Safety buffer */
      }
 
      /* Personal Bests Grid: 2 columns on mobile instead of 4 squished ones */

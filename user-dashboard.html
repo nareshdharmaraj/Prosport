@@ -77,7 +77,7 @@
             </ul>
         </aside>
 
-        <main style="padding: 30px; width: 100%;">
+        <main class="dashboard-main">
             <div class="container">
                 <!-- === OVERVIEW SECTION === -->
                 <div id="section-overview" class="dashboard-section active">
@@ -292,32 +292,99 @@
                         </div>
                     </div>
 
+                    <!-- New Overview Charts Row: Wellness -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Hydration Tracker -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Hydration Tracker</h3>
+                                <div class="chart-controls"><button class="active">Today</button></div>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 30%; background: #00bcd4;" title="8am">
+                                    <div class="bar-tooltip">200ml</div>
+                                    <div class="bar-label">8am</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 50%; background: #00bcd4;" title="11am">
+                                    <div class="bar-tooltip">400ml</div>
+                                    <div class="bar-label">11am</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 40%; background: #00bcd4;" title="2pm">
+                                    <div class="bar-tooltip">300ml</div>
+                                    <div class="bar-label">2pm</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 60%; background: #00bcd4;" title="5pm">
+                                    <div class="bar-tooltip">500ml</div>
+                                    <div class="bar-label">5pm</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 20%; background: #00bcd4;" title="8pm">
+                                    <div class="bar-tooltip">150ml</div>
+                                    <div class="bar-label">8pm</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sleep Analysis -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Sleep Quality</h3>
+                                <span style="color: #673ab7; font-weight:bold;">7h 20m Avg</span>
+                            </div>
+                            <div class="line-chart-svg">
+                                <svg width="100%" height="100%" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                    <path d="M0,100 L50,80 L100,90 L150,40 L200,50 L250,70 L300,30 L350,60 L400,50"
+                                        fill="none" stroke="#673ab7" stroke-width="3" stroke-linecap="round" />
+                                    <circle cx="300" cy="30" r="5" fill="#673ab7">
+                                        <title>Best: 8h 15m</title>
+                                    </circle>
+                                </svg>
+                            </div>
+                            <div class="donut-legend" style="margin-top: 10px;">
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #673ab7;"></div> Deep Sleep 45%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #9575cd;"></div> REM 30%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Recent Purchases -->
                     <div style="margin-bottom: 40px;">
                         <h3 style="margin-bottom: 20px;">Recent Purchases</h3>
                         <div
                             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
                             <div class="product-card"
-                                style="display: flex; gap: 20px; padding: 20px; align-items: center; border: 1px solid var(--border-color); border-radius: 10px;">
-                                <div style="width: 80px; height: 80px; background: #eee; border-radius: 8px;"><img
-                                        src="Assets/p2.jpg"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"></div>
-                                <div>
-                                    <h4>Pro Runner T500</h4>
-                                    <p style="opacity: 0.7;">Delivered on Jan 10</p>
+                                style="display: flex; flex-direction: row; gap: 10px; padding: 12px; align-items: center; border: 1px solid var(--border-color); border-radius: 10px; text-align: left;">
+                                <div
+                                    style="width: 60px; height: 60px; background: #eee; border-radius: 8px; flex-shrink: 0;">
+                                    <img src="Assets/p2.jpg"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                                 </div>
-                                <div style="margin-left: auto; font-weight: bold;">$1,299.00</div>
+                                <div style="flex: 1; min-width: 0; margin-right: 8px;">
+                                    <h4 style="margin: 0; font-size: 0.95rem; line-height: 1.2; margin-bottom: 4px;">Pro
+                                        Runner T500</h4>
+                                    <p style="opacity: 0.7; margin: 0; font-size: 0.8rem;">Delivered on Jan 10</p>
+                                </div>
+                                <div style="margin-left: auto; font-weight: bold; flex-shrink: 0; font-size: 0.95rem;">
+                                    $1,299.00</div>
                             </div>
                             <div class="product-card"
-                                style="display: flex; gap: 20px; padding: 20px; align-items: center; border: 1px solid var(--border-color); border-radius: 10px;">
-                                <div style="width: 80px; height: 80px; background: #eee; border-radius: 8px;"><img
-                                        src="Assets/p1.jpg"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"></div>
-                                <div>
-                                    <h4>Lifting Gloves</h4>
-                                    <p style="opacity: 0.7;">Delivered on Dec 25</p>
+                                style="display: flex; flex-direction: row; gap: 10px; padding: 12px; align-items: center; border: 1px solid var(--border-color); border-radius: 10px; text-align: left;">
+                                <div
+                                    style="width: 60px; height: 60px; background: #eee; border-radius: 8px; flex-shrink: 0;">
+                                    <img src="Assets/p1.jpg"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                                 </div>
-                                <div style="margin-left: auto; font-weight: bold;">$30.00</div>
+                                <div style="flex: 1; min-width: 0; margin-right: 8px;">
+                                    <h4 style="margin: 0; font-size: 0.95rem; line-height: 1.2; margin-bottom: 4px;">
+                                        Lifting Gloves</h4>
+                                    <p style="opacity: 0.7; margin: 0; font-size: 0.8rem;">Delivered on Dec 25</p>
+                                </div>
+                                <div style="margin-left: auto; font-weight: bold; flex-shrink: 0; font-size: 0.95rem;">
+                                    $30.00</div>
                             </div>
                         </div>
                     </div>
@@ -454,6 +521,63 @@
                         </div>
                     </div>
 
+                    <!-- New Order Charts Row: Spending & Frequency -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Spending by Category -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Spending by Category</h3>
+                            </div>
+                            <div class="donut-chart-wrap">
+                                <div class="donut-circle"
+                                    style="background: conic-gradient(#ff5722 0% 50%, #ffc107 50% 80%, #8bc34a 80% 100%);">
+                                    <div class="donut-inner">
+                                        <div style="font-size: 1.5rem; font-weight: bold;">$2.4k</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.7;">Total</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donut-legend">
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #ff5722;"></div> Equipment 50%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #ffc107;"></div> Supplements 30%
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: #8bc34a;"></div> Apparel 20%
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Frequency -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Order Frequency</h3>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 40%; background: #607d8b;" title="Q1: 2">
+                                    <div class="bar-tooltip">2 Orders</div>
+                                    <div class="bar-label">Q1</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 60%; background: #607d8b;" title="Q2: 3">
+                                    <div class="bar-tooltip">3 Orders</div>
+                                    <div class="bar-label">Q2</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 80%; background: var(--primary-color);"
+                                    title="Q3: 5">
+                                    <div class="bar-tooltip">5 Orders</div>
+                                    <div class="bar-label">Q3</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 50%; background: #607d8b;" title="Q4: 2">
+                                    <div class="bar-tooltip">2 Orders</div>
+                                    <div class="bar-label">Q4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="product-card"
                         style="padding: 20px; margin-bottom: 20px; border: 1px solid var(--border-color); border-radius: 10px;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
@@ -572,6 +696,57 @@
                                 <strong>Total Value:</strong> <span
                                     style="color: var(--primary-color); font-weight: bold;">$1,080</span>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- New Wishlist Charts Row: Brand & Timeline -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Brand Preferences -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Brand Preferences</h3>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 70%; background: #3f51b5;"
+                                    title="Nike: 7 items">
+                                    <div class="bar-tooltip">7</div>
+                                    <div class="bar-label">Nike</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 50%; background: #3f51b5;"
+                                    title="Adidas: 5 items">
+                                    <div class="bar-tooltip">5</div>
+                                    <div class="bar-label">Adi</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 80%; background: #3f51b5;"
+                                    title="GymShark: 8 items">
+                                    <div class="bar-tooltip">8</div>
+                                    <div class="bar-label">GymS</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 30%; background: #3f51b5;"
+                                    title="Puma: 3 items">
+                                    <div class="bar-tooltip">3</div>
+                                    <div class="bar-label">Puma</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Added Timeline -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Added Recently</h3>
+                            </div>
+                            <div class="line-chart-svg">
+                                <svg width="100%" height="100%" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                    <path d="M0,120 L100,100 L200,130 L300,50 L400,20" fill="none" stroke="#e91e63"
+                                        stroke-width="4" stroke-linecap="round" />
+                                    <circle cx="300" cy="50" r="6" fill="#fff" stroke="#e91e63" stroke-width="2">
+                                        <title>Last Week: +3 Items</title>
+                                    </circle>
+                                </svg>
+                            </div>
+                            <div style="text-align:center; font-size:0.85rem; opacity:0.7; margin-top:5px;">Spike in
+                                activity last week</div>
                         </div>
                     </div>
 
@@ -737,6 +912,71 @@
                         </div>
                     </div>
 
+                    <!-- New Settings Charts Row: Notifications & Data -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                        <!-- Notification Volume -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Notifications</h3>
+                                <div class="chart-controls"><button class="active">Daily</button></div>
+                            </div>
+                            <div class="bar-chart-wrap">
+                                <div class="interactive-bar" style="height: 30%; background: #ffc107;" title="Order">
+                                    <div class="bar-tooltip">Order</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 60%; background: #ffc107;" title="Promo">
+                                    <div class="bar-tooltip">Promo</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 20%; background: #ffc107;" title="Sys">
+                                    <div class="bar-tooltip">Sys</div>
+                                </div>
+                                <div class="interactive-bar" style="height: 10%; background: #ffc107;" title="Msg">
+                                    <div class="bar-tooltip">Msg</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Data Privacy Health -->
+                        <div class="mockup-chart-container">
+                            <div class="chart-header">
+                                <h3 style="margin:0;">Data Privacy Score</h3>
+                            </div>
+                            <div style="padding: 20px;">
+                                <div style="margin-bottom: 15px;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+                                        <span>Profile Visibility</span><span style="color:#4caf50;">Public</span>
+                                    </div>
+                                    <div
+                                        style="width:100%; height:8px; background:var(--border-color); border-radius:4px;">
+                                        <div style="width:100%; height:100%; background:#4caf50; border-radius:4px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-bottom: 15px;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+                                        <span>Ad Personalization</span><span style="color:#ff9800;">Limited</span>
+                                    </div>
+                                    <div
+                                        style="width:100%; height:8px; background:var(--border-color); border-radius:4px;">
+                                        <div style="width:50%; height:100%; background:#ff9800; border-radius:4px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-bottom: 0;">
+                                    <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+                                        <span>Data Sharing</span><span style="color:#f44336;">Off</span>
+                                    </div>
+                                    <div
+                                        style="width:100%; height:8px; background:var(--border-color); border-radius:4px;">
+                                        <div style="width:10%; height:100%; background:#f44336; border-radius:4px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="mockup-chart-container">
                         <form style="display: flex; flex-direction: column; gap: 20px;">
                             <div>
@@ -755,7 +995,7 @@
                                     style="width: 100%; padding: 12px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px;">
                             </div>
                             <div style="display: flex; gap: 10px; align-items: center;">
-                                <input type="checkbox" id="newsletter" checked>
+                                <input type="checkbox" id="newsletter" checked style="width: auto; margin-bottom: 0;">
                                 <label for="newsletter">Subscribe to newsletter</label>
                             </div>
                             <button class="btn" style="align-self: flex-start; margin-top: 10px;">Save Changes</button>
@@ -766,7 +1006,7 @@
         </main>
     </div>
 
-    <footer class="footer-elaborate">
+    <footer class="footer-elaborate dashboard-footer">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-col" data-animate="fade-up">
