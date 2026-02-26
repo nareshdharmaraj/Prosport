@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="Assets/favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSport - Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="auth-header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-dumbbell"></i> PROSPORT
+        </a>
+        <div style="display: flex; gap: 10px;">
+            <button class="icon-btn rtl-toggle" title="Toggle RTL"><i class="fas fa-globe"></i></button>
+            <button class="icon-btn theme-toggle" title="Toggle Theme"><i class="far fa-moon"></i></button>
+        </div>
+    </div>
+
+
+    <div class="auth-container register-bg">
+        <div class="auth-box">
+            <div style="text-align: center; margin-bottom: 25px;">
+                <a href="index.html" class="logo" style="margin: 0; justify-content: center; font-size: 1.8rem;">
+                    <i class="fas fa-dumbbell"></i> PROSPORT
+                </a>
+            </div>
+            <h2>JOIN THE TEAM</h2>
+            <form action="user-dashboard.html">
+                <input type="text" class="auth-input" placeholder="Full Name" required>
+                <input type="email" class="auth-input" placeholder="Email Address" required>
+                <input type="password" class="auth-input" placeholder="Password" required>
+                <input type="password" class="auth-input" placeholder="Confirm Password" required>
+                <button type="submit" class="btn" style="width: 100%; margin-bottom: 25px;">REGISTER</button>
+            </form>
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+            <div class="social-auth">
+                <button class="social-btn google">
+                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" width="20">
+                    Register with Google
+                </button>
+            </div>
+
+            <p style="text-align: center; margin-top: 30px; width: 100%;">
+                Already have an account? <br>
+                <a href="login.html" class="auth-redirect"
+                    style="font-weight: 800; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-top: 10px;">Login
+                    Here</a>
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart (2)</h3>
+            <button class="icon-btn close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="Assets/hex_dumbbell.jpg" alt="Product">
+                <div>
+                    <h4>Hex Dumbbells</h4>
+                    <p>$49.99 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="cart-item">
+                <img src="Assets/water_bottle.jpg" alt="Product">
+                <div>
+                    <h4>Elite Bottle</h4>
+                    <p>$25.00 x 1</p>
+                </div>
+                <button class="icon-btn" style="color: red; margin-left: auto;"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="flex-between" style="margin-bottom: 20px; font-weight: bold;">
+                <span>Total</span>
+                <span class="cart-total">$74.99</span>
+            </div>
+            <a href="#" class="btn" style="width: 100%; text-align: center;">Checkout</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
